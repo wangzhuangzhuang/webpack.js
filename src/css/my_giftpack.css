@@ -1,0 +1,87 @@
+.wrap {
+  background: #F5F5F5;
+}
+.shop_url {
+  width: 100%;
+  height: 62px;
+  background: #f3f3f3;
+  line-height: 62px;
+  color: #999;
+  font-size: 12px;
+}
+.shop_url p {
+  width: 1200px;
+  margin: 0 auto;
+}
+.shop_url img {
+  margin: 0 12px;
+  vertical-align: middle;
+}
+.shop_url a {
+  color: #999;
+}
+.shop_url a:last-child {
+  color: #3f231e;
+  font-weight: 700;
+}
+.convert_sp {
+  width: 1200px;
+  margin: 0 auto;
+}
+.convert_sp a {
+  color: #000;
+}
+.convert_sp dl {
+  width: 590px;
+  height: 300px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  display: inline-block;
+}
+.convert_sp dl dt {
+  width: 290px;
+  height: 100%;
+  float: left;
+}
+.convert_sp dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.convert_sp dl dd {
+  float: left;
+  width: 271px;
+  padding-top: 31px;
+}
+.convert_sp dl dd h1 {
+  font-size: 18px;
+  font-weight: normal;
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+}
+.convert_sp dl dd h2 {
+  font-size: 25px;
+  color: #ff9600;
+  margin-top: 19px;
+  height: 55px;
+  line-height: 55px;
+  border-top: 1px dashed #EBEBEB;
+  font-weight: normal;
+}
+.convert_sp dl dd p {
+  font-size: 14px;
+  color: #999999;
+}
+.convert_sp dl dd button {
+  width: 120px;
+  height: 40px;
+  background: none;
+  border: solid 1px #ff9600;
+  color: #ff9600;
+  font-size: 18px;
+  margin-top: 54px;
+}
+.convert_sp a:nth-child(2n) dl {
+  margin-right: 0;
+}

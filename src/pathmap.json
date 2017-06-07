@@ -1,0 +1,5 @@
+{
+	"jquery"   :   "js/lib/jquery-1.12.4.js",
+	"reset"    :   "css/reset.css",
+	"base"     :   "css/base.css"
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>限时抢购</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/replace_psd.css?v=5bf5411c30" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/page.css?v=ad31fea776">
+	</head>
+	<body class="page2">
+		<div class="wrap" style="background: #fff;">
+			<div class="box_bg">
+				 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="shopVisit">
+			</div>
+			<div class="lastMinute">
+			   <ul class="lastMinute_lists">
+			   	  <!--<a href="javascript:;"><li><p>今日10:00</p><span>已结束</span></li></a>
+			   	  <a href="javascript:;"><li><p>今日14:00</p><span>已结束</span></li></a>
+			   	  <a href="javascript:;"><li class="active"><p>今日18:00</p><span>抢购中</span></li></a>
+			   	  <a href="javascript:;"><li><p>今日20:00</p><span>即将开始</span></li></a>
+			   	  <a href="javascript:;"><li><p>今日22:00</p><span>即将开始</span></li></a>-->
+			   </ul>
+            </div>
+            <div class="lastMinShop">
+                <i class="lastMinShop_tit lastMinShop_tit1"></i>
+                <i class="lastMinShop_tit lastMinShop_tit2"></i>
+                <i class="lastMinShop_tit lastMinShop_tit3"></i>
+                <div class="lastMinShopAlert">今日限时购<span class="lastMinShop_min"></span><span class="lastMinShopTime"></span></div>
+            </div>
+            <div class="lastMinPro">
+                <!-- <div class="lastMinProLists_over">
+                      <div class="lastMinProList_img">
+                           <img src="images/shop_03.png">
+                      </div>
+                      <div class="lastMinProList_info">
+                          <ul class="lmpli_show">
+                          	   <li class="lmpliShow_tit">商品名称商品名称商品名称商品名称</li>
+                          	   <li class="lmpliShow_price">抢购价：<span>￥ 280 </span><i>￥312</i></li>
+                          	   <li class="lmpliShow_num">已抢购60件</li>
+                          </ul>
+                          <div class="lmpli_play">
+                              <p class="lmpliPlay_sche"><i></i></p>
+                              <a href="#"><p class="lmpliPlay_next">原价购买</p></a>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="lastMinProLists_on">
+                      <div class="lastMinProList_img">
+                           <img src="images/shop_03.png">
+                      </div>
+                      <div class="lastMinProList_info">
+                          <ul class="lmpli_show">
+                          	   <li class="lmpliShow_tit">商品名称商品名称商品名称商品名称</li>
+                          	   <li class="lmpliShow_price">抢购价：<span>￥ 280 </span><i>￥312</i></li>
+                          	   <li class="lmpliShow_num">已抢购60件</li>
+                          </ul>
+                          <div class="lmpli_play">
+                              <p class="lmpliPlay_sche"><i></i><span>50%</span></p>
+                              <a href="#"><p class="lmpliPlay_next">立即购买</p></a>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="lastMinProLists_finished">
+                      <div class="lastMinProList_img">
+                           <img src="images/shop_03.png">
+                      </div>
+                      <div class="lastMinProList_info">
+                          <ul class="lmpli_show">
+                          	   <li class="lmpliShow_tit">商品名称商品名称商品名称商品名称</li>
+                          	   <li class="lmpliShow_price">抢购价：<span>￥ 280 </span><i>￥312</i></li>
+                          	   <li class="lmpliShow_num">已抢购60件</li>
+                          </ul>
+                          <div class="lmpli_play">
+                              <p class="lmpliPlay_sche"><i></i><span>100%</span></p>
+                              <a href="#"><p class="lmpliPlay_next">去逛逛</p></a>
+                          </div>
+                      </div>
+                 </div>
+                 <div class="lastMinProLists_will">
+                      <div class="lastMinProList_img">
+                           <img src="images/shop_03.png">
+                      </div>
+                      <div class="lastMinProList_info">
+                          <ul class="lmpli_show">
+                          	   <li class="lmpliShow_tit">商品名称商品名称商品名称商品名称</li>
+                          	   <li class="lmpliShow_price">抢购价：<span>￥ 280 </span><i>￥312</i></li>
+                          	   <li class="lmpliShow_num">已抢购60件</li>
+                          </ul>
+                          <div class="lmpli_play">
+                              <p class="lmpliPlay_sche"><i></i><span>50%</span></p>
+                              <a href="#"><p class="lmpliPlay_next">即将开始</p></a>
+                          </div>
+                      </div>
+                 </div>-->
+
+
+            </div>
+            
+
+			
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/limit_time.js?v=726cf4232b"></script>
+		<script type="text/javascript">
+		 picture.init();
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		     
+		</script>
+	</body>
+</html>

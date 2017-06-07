@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<link rel="stylesheet" href="/css/my_purse.css?v=3a5df153cb" />
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+		<title>我的钱袋</title>
+	</head>
+	<body>
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+		<div class="my_purse">
+			<div class="purse">
+				<ul>
+					<li>我的洋币</li>
+					<li>我的红包</li>
+				</ul>
+				<h1>您拥有红包：<span>￥1000</span><small>(累计收到500个红包)</small></h1>
+				<p>红包明细</p>
+				<table>
+					<tr>
+						<td>签到有礼领红包</td>
+						<td>2016-10-10  11.30</td>
+						<td>￥10</td>
+					</tr>
+					<tr>
+						<td>邀请两个好友</td>
+						<td>2016-10-10  11.30</td>
+						<td>￥20</td>
+					</tr>
+					<tr>
+						<td>签到有礼领红包</td>
+						<td>2016-10-10  11.30</td>
+						<td>￥30</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		</div>
+		</div>
+		<script src="/js/picture.js"></script>
+	</body>
+</html>

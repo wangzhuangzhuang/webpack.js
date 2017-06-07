@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc">
+		<link rel="stylesheet" href="/css/paging.css?v=50d373afcd">
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/layer.css">
+		<link rel="stylesheet" href="/css/details.css?v=2aa949a259">
+	</head>
+
+	<body>
+		<div class="wrap">
+			 <%- include('_partial/headerHTML') %>
+			<div class="boxBackColr">
+				<div class="content">
+					 <header class="details-header">
+					 	 <li class="cate_one">母婴护理</li>
+					 	 <li class="cate_two">Karicare gold 可瑞康金装奶粉1段900g</li>
+					 </header>
+					 <div class="details-box">
+					 	<section class="details-box-left" id="commodityIMgBox">
+					 		<div class="details-box-left-imgBox">
+					 		<!--
+                             	作者：offline
+                             	描述：小图列表
+                             -->	
+					 			<div class="details-box-left-imgBox-nav" id="small_imglist">
+					 				<!--<li class="active"><img src="/imgs/duihuan_03.png"/></li>
+					 				<li><img src="/imgs/img_01.png"/></li>
+					 				<li><img src="/imgs/duihuan_03.png"/></li>
+					 				<li><img src="/imgs/img_01.png"/></li>
+					 				<li><img src="/imgs/duihuan_03.png"/></li>-->
+					 			</div>
+					 			<!--
+                             	作者：offline
+                             	描述：大图
+                             -->
+					 			<div class="details-box-left-imgBox-img" id="details-box-left-imgBox-img">
+					 				<img src="" class="big_imglist"/>
+					 			</div>
+					 		</div>
+					 		<p class="share-collect"><a href="javascript:;"><img src="/imgs/coll_no.png"/>收藏</a><!--<a href="javascript:;">分享 （赚￥70）</a>--></p>
+					 	</section>
+					 	<section class="details-box-right">
+					 		<h1 class="details-box-right-title"><span></span>
+					 			<button class="limit_time_btn"></button>
+					 		</h1>
+					 		
+					 	    <div class="details-box-right-row sale_price">
+					 	    	<span class="title-text">售价</span>
+					 	    	<span class='now'><b>￥</b></span>
+					 	    	<span class="former before_price"><b>￥</b></span>	
+					 	    	
+					 	    </div>
+					 	     <!--<div class="details-box-right-row">
+					 	    	<span class="title-text">会员价</span>
+					 	        <a href="javascript:;" class="loginBtn">登录</a>
+					 	    </div>-->
+					 	    <div class="details-box-right-row row2">
+					 	    	<span class="title-text">跨境电商综合税11.9%</span>
+					 	        <span class="former tax"></span>	
+					 	    </div>
+					 	     <div class="details-box-right-row row3">
+					 	    	<span class="title-text">规格</span>
+					 	        <ol class="standard" id="standard">
+					 	        	<!--<li class="active">200ML</li>
+					 	        	<li>300ML</li>
+					 	        	<li>500ML</li>-->
+					 	        </ol>
+					 	    </div>
+					 	    <div class="details-box-right-row">
+					 	    	<span class="title-text">运费</span>
+					 	        <span class="former freight"><b></b>(以实际结算运费价为主)</span>	
+					 	    </div>
+					 	    <div class="details-box-right-row">
+					 	    	<span class="title-text">数量</span>
+					 	        <div  class="number">
+					 	        	<span class="cut" id="cut"></span>
+					 	        	<input type="number" value="1" id="numberText" min="1"/>
+					 	        	<span class="add" id="add"></span>
+					 	        </div>	
+					 	    </div>
+					 	    <div class="details-box-right-row row4">
+					 	    	<button type="button" class="purchase" id="purchase">立即购买</button>
+					 	    	<button type="button" class="join" id="join" class="join">加入购物车</button>
+					 	    </div>
+					 	   <!-- <div class="details-box-right-row">
+					 	    	<span class="title-text">积分</span>
+					 	        <span class="former integral"><b>102</b>(以实际结算运费价为主)</span>	
+					 	    </div>-->
+					 	    <div class="details-box-right-row row5">
+					 	    	<span class="title-text">优惠券</span>
+					 	        <span class="former integral quan"><b>支持使用优惠券</b><a href="javascript:;">去抢劵 <img src="/imgs/11.png" alt="" /></a></span>	
+					 	    </div>
+					 	</section>
+					 </div>
+				     <div class="shop-guarantee">
+				     	<li>
+				     		<h1>海外直采   海关监管</h1>
+				     		<p>直邮发货并经海关监管</p>
+				     	</li>
+				     	<li>
+				     		<h1>100%正品   境外闪速发货</h1>
+				     		<p>正品保证  闪速发货收货</p>
+				     	</li>
+				     	<li>
+				     		<h1>贴心服务   售后保障</h1>
+				     		<p>贴心的服务让您售后无忧</p>
+				     	</li>
+				     	<li>
+				     		<h1>实店体验   智能导购</h1>
+				     		<p>智能生活体验馆让您可以随时购买</p>
+				     	</li>
+				     </div>
+				     <div class="overbalance">
+				     	<h1 class="overbalance-header">
+				     		<span>超值搭配</span>
+				     	</h1>
+				     	<div class="overbalance-content">
+				     		<section class="overbalance-content-left" id="overbalance-content-left">
+				     			
+				     		</section>
+				     		<section class="overbalance-content-right">
+				     			 <p>拼搭价：<span class="grade_price"></span></p>
+				     			 <p>原价：<span class="yj_price"></span>节省：<span class="jy_price"></span></p>
+				     			 <p><button type="button" id="groupBtn">加入购物车</button></p>
+				     		</section>
+				     	</div>
+				     </div>
+				     <div class="footer">
+				    	<div class="correlation">
+				    		<h1 class="correlation-header">品牌名称</h1>
+				    		<div class="brand_vip">
+				    			<dl>
+				    				<dt><img src="/imgs/brand_01.png" id="brand_img"/></dt>
+				    				<dd>
+				    					<p>关注人数：<span id="brand_user_num">10000</span></p>
+				    					<p>商品数：<span id="brand_goods_num">100</span></p>
+				    				</dd>
+				    			</dl>
+				    			<a href="javascript:;" id="preferenceBtn">进入品牌专区</a>
+				    		</div>
+				    		<h1 class="correlation-header">相关推荐</h1>
+				    		<ol class="correlation-wrap">
+				    			
+				    		</ol>
+				    	</div>
+				    	<div class="imgText">
+				    		<header class='imgText-header' id="imgText-header">
+				    			<ol class='tabList' data-tab="imgText-tabBox">
+				    				<li class="active">商品详情</li>
+				    				<li>用户评价<span></span></li>
+				    			</ol>
+				    			<ul class="imgText-header-right">
+				    				<li>
+				    					手机购买
+				    					<i class="arr"></i>
+				    				</li>
+				    				<li class="addShop join">加入购物车</li>
+				    			</ul>
+				    		</header>
+				    	    <div class="imgText-tabBox" id="imgText-tabBox">
+				    	    	<section class="imgBox">
+				    	    		<ol class="imgList">
+				    	    			
+				    	    		</ol>	
+				    	    		
+				    	    		
+				    	    	</section>
+				    	        <section class="textBox">
+				    	        	<div class="textBox-list" id="textBox-list">
+				    	        		
+				    	        	</div>
+				    	        	<div class="pagingBox">
+				    	        		<div class="paging"></div>
+				    	        	</div>
+				    	        </section>
+				    	    </div>
+				    	</div>
+		            </div>
+				</div>	
+			</div>
+		    
+ 
+		</div>
+
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js"></script>
+		<script src="/js/picture.js"></script>
+		<script src="/js/query.js?v=feae9124bc"></script>
+		<script src="/js/layer.js"></script>
+		<script src="/js/paging.js?v=483d518108"></script>
+		<script src="/js/countDown.js?v=0179855897"></script>
+		<script src="/js/commonality.js?v=ebf7f91cbb"></script>
+		<script src="/js/details.js?v=b14e84cdfb"></script>
+		
+	</body>
+
+</html>

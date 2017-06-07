@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心-身份证号码管理</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/submit_order.css?v=452efc4944" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<link rel="stylesheet" href="/css/layer.css" />
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+		<script type="text/javascript" src="/js/crypto-min.js?v=f484c60921"></script>
+		<script type="text/javascript" src="/js/hmac-min.js?v=9f9f131b7e"></script>
+		<script type="text/javascript" src="/js/sha1-min.js?v=6058ff06e8"></script>
+		<script type="text/javascript" src="/js/base64.js?v=1562ca0bb9"></script>
+		<script type="text/javascript" src="/js/plupload.full.min.js?v=05336e689b"></script>
+    
+	</head>
+	<body>
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+		<div class="user_recip_wrap" id="user_recip_wrap">
+			<div class="user_recip_ads">
+				<ul class="ads_list">
+					<li>身份证号码管理</li>
+				</ul>
+				<div class="add_address" id="add_idcard">
+              	<h1>添加身份证</h1>
+					
+						<p style="padding-top: 15px;"><label>姓名：</label><input type="text" placeholder="请务必填写真实姓名，该姓名将用于海关清关核对" id="add_name"><span id="prompt"></span></p>
+						<p class="user_phone"><label>身份证号码：</label><input type="text" placeholder="请务必填写真实身份证，该身份证将用于海关清关核对" id="add_number"></p>
+						<div class="upload_imgs">
+							<label style="width: 122px;">身份证图片上传：</label>
+							<div class="pload_imgsBox">
+								<div class="upload_imgs-fileLeft" id="container" style="position: relative;">
+									<div class="inputBox" id="selectfiles" style="position: relative; z-index: 1;">
+
+										<section id="sec1">
+
+										</section>
+									</div>
+									<p class="tishi">示例</p>
+									<div class="imgBox">
+										<img src="/imgs/zhen_img_01.png">
+									</div>
+									<div id="html5_1bbkulmc595l1lgttb9uri1ilj6_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 126px; height: 80px; overflow: hidden; z-index: 0;"><input id="html5_1bbkulmc595l1lgttb9uri1ilj6" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 99999;" multiple="" accept=""></div>
+								</div>
+								<section></section>
+								<div class="upload_imgs-fileRight" id="container2" style="position: relative;">
+									<div class="inputBox" id="selectfiles2" style="position: relative; z-index: 1;">
+
+										<section id="sec2">
+
+										</section>
+
+									</div>
+									<p class="tishi">示例</p>
+									<div class="imgBox">
+										<img src="/imgs/shen_img_02.png" data-required="true" data-descriptions="picture">
+									</div>
+									<div id="html5_1bbkulmc39lhtn4qqr16i7std4_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 126px; height: 80px; overflow: hidden; z-index: 0;"><input id="html5_1bbkulmc39lhtn4qqr16i7std4" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 99999;" multiple="" accept=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="tishi_word">
+							<label> 温馨提示：</label>
+							<ul>
+								<li>1、上传的身份证以示例为准清晰、可观,以免影响您的审核结果;</li>
+								<li>2、根据海关规定，购买跨境商品需要办理清关手续，请您认真填写 ，以确保您购买的商品顺利通过海关检查;</li>
+								<li>3、购买跨境商品需填写真实的姓名及身份证号码，部分商品下单时需提供收货人的身份证照片，具体请以下单时的提示为准。</li>
+							</ul>
+						</div>
+						<button class="confirm_btn" id="saveBtn" type="button">提交审核</button>
+						<div id="postfiles2"></div>
+              </div>
+              <div class="idcard_list">
+				<h1 style="padding-top: 20px;">已添加收货地址</h1>
+				<div class="user_ads" id="user_cardnum">
+					<ul>
+						<li>收货人</li>
+						<li>身份证号码</li>
+						<li>操作</li>
+					</ul>
+					<!--<ol>
+						<li>黄勋</li>
+						<li>182100312347583653</li>
+						<li><span>编辑</span>|<label>删除</label></li>
+					</ol>-->
+				</div>
+				</div>
+			</div>
+			<div id="layui-m-layer0">
+				<div class="layui-m-layersection">
+					<div class="layui-m-layercont">确定删除吗？</div>
+					<div class="layui-m-layerbtn">
+						<span class="quxiao">取消</span><span class="delete_card">确定</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		<script src="/js/picture.js"></script>
+		<script type="text/javascript" src="/js/layer.js?v=2d3d7e0fdc"></script>
+	    <script type="text/javascript" src="/js/weiImg2.js"></script>
+		<script src="/js/add_idcard.js?v=c6b41c52c8"></script>
+		
+	</body>
+</html>

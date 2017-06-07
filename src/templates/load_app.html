@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-帮助说明</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/shopping_detail.css?v=97e2625598" />
+		<link rel="stylesheet" href="/css/my_news.css?v=183c4d0e63" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			
+			<div class="down_load">
+				<div class="load_erweima">
+					<div class="load">
+						<button class="ios_btn"><img src="/imgs/ios_load.png"/>Iphone版下载</button>
+						<button class="android_btn"><img src="/imgs/android_load.png"/>Android版下载</button>
+					</div>
+					<div class="erweima">
+						<img src="/imgs/erweima.png" alt="" class="ios_img"/>
+						<img src="/imgs/upload.png" alt="" class="android_img"/>
+					</div>
+				</div>
+				
+				<div class="explain">
+					<dl>
+						<dt><img src="/imgs/load_01.png"/></dt>
+						<dd>
+							<h1>专享优惠</h1>
+							<small>Discount</small>
+							<p>源自于澳新正品货源 来给你极致的购物体验</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="/imgs/load_02.png"/></dt>
+						<dd>
+							<h1>正品好货</h1>
+							<small>Genuine goods</small>
+							<p>每日都有特价商品 各种优惠活动轰爆全场</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="/imgs/load_03.png"/></dt>
+						<dd>
+							<h1>畅享社区</h1>
+							<small>Enjoy community</small>
+							<p>源自于澳新正品货源 来给你极致的购物体验</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+			</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script>
+			$(".ios_btn").on("click",function(){
+				$(".ios_img").show();
+				$(".android_img").hide();
+			})
+			$(".android_btn").on("click",function(){
+				$(".ios_img").hide();
+				$(".android_img").show();
+			})
+		</script>
+	</body>
+</html>

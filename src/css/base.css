@@ -1,0 +1,101 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/* 字体 */
+
+/*兼容*/
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  /*使用无衬线字体*/
+}
+body {
+  -webkit-text-size-adjust: 100%!important;
+  /*禁止IOS调整字体大小*/
+}
+a,
+img {
+  -webkit-touch-callout: none;
+  /*禁止长按链接与图片弹出菜单*/
+}
+html,
+body {
+  -webkit-user-select: none;
+  /*禁止选中文本*/
+  user-select: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /*去掉webkit默认的表单样式*/
+}
+a,
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+}
+input::-webkit-input-speech-button {
+  display: none;
+  /*隐藏Android的语音输入按钮*/
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+}
+/*解决更改表单元素导致在移动端无法使用*/
+input,
+select,
+button,
+textarea {
+  /*设置外观的默认样式*/
+  -webkit-appearance: none;
+}
+.box {
+  display: -webkit-box;
+  display: box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+}
+.orient {
+  -webkit-box-orient: vertical;
+  -wmoz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -mst-box-orient: vertical;
+  orient: vertical;
+}
+.flex {
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -o-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  color: #000;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 14px;
+  background: #F5F5F5;
+}

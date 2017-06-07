@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-退货详情</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/shopping_detail.css?v=97e2625598" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="shop_url">
+				<p>
+				全部<img src="/imgs/find.png" alt="" /><a href="#">交易管理</a><img src="/imgs/find.png" alt="" /><a href="#">我的订单</a><img src="/imgs/find.png" alt="" /><a href="#">退货详情</a>
+				</p>
+			</div>
+			<div class="shop_detail">
+				<div class="shop_anarchy" id="shop_unfilled" style="height:204px;">
+					<div id="cargo_refund">
+					<span></span><p></p><span></span><p></p><span></span><p></p><span></span>
+					<ul>
+						<li>申请退货中</li>
+						<li>申请成功</li>
+						<li>处理退货中</li>
+						<li>退货完成</li>
+					</ul>
+					</div>
+				</div>
+				<div class="unfilled_order" id="applic_refund">
+					<p>服务类型：<span>退货</span></p>
+						<p><label>收货地址：</label>
+							<span>如为信用卡、储蓄卡支付仅支持原路返回，退货成功后，贷款会自动退I还给您支付所使用的银行卡</span>
+							<small>备注：商品问题税费、运费全退，非商品问题税费、运费不退</small>
+						</p>
+						<p>订单编号：<span class="order_sn">2113112121212132121</span></p>
+						<p>下单时间：<span class="order_time">2016-10-20   10:20:53</span></p>
+						<p>退款金额：<span class="money_num">￥225.25</span></p>
+						<p>退货原因：<span class="apply_content">商品破损</span></p>
+						<p>退货数量：<span class="nums">1件</span></p>
+						<p>退货说明：<span class="apply_reason">商品有问题</span></p>
+						 <div class="upload_imgs">
+						 	<label>上传照片：</label>
+						 	<a href="javascript:;" class="file">
+                                  <img src="" class="order_img"/>
+                              </a>
+						 </div>    
+						     <div class="submit_btn"><button class="cancel_sub">取消订单</button><button class="whrite_num">填写单号</button></div>
+					</div>
+				
+				<!--<table>
+					<tr>
+						<td>商品信息</td>
+						<td>商品规格</td>
+						<td>单价(元)</td>
+						<td>数量</td>
+						<td>总计(元)</td>
+					</tr>
+					<tr>
+						<td>
+							<dl>
+								<dt><img src="/imgs/user_centre_03.png"/></dt>
+								<dd>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</dd>
+						   </dl>
+						</td>
+						<td>水果味</td>
+						<td>￥100.5</td>
+						<td>×1</td>
+						<td>￥100.5</td>
+					</tr>
+					<tr>
+						<td>
+							<dl>
+								<dt><img src="/imgs/user_centre_03.png"/></dt>
+								<dd>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</dd>
+						   </dl>
+						</td>
+						<td>水果味</td>
+						<td>￥100.5</td>
+						<td>×1</td>
+						<td>￥100.5</td>
+					</tr>
+				</table>-->
+				
+				<!--<div class="geuss_like" id="user_like">
+				</div>
+				<div class="huan_like" id="user_replace">
+					<h1>猜你喜欢</h1>
+					<p><span>换一批</span><img src="/imgs/fenlei_55.png"/></p>
+				</div>
+				<section class="fiery" id="userReplace_like">
+					<div class="classify-content">
+						<a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        </div>
+					</section>-->
+					</div>
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/refund_application.js"></script>
+		<script type="text/javascript">
+		
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		    
+		</script>
+	</body>
+</html>

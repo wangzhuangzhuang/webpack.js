@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>重置密码</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/replace_psd.css?v=5bf5411c30" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="pc_replace">
+				<div class="psd_find">
+					<a href="">首页</a><span><img src="/imgs/find.png"/>找回密码</span>
+				</div>
+				<div class="concrete_psd">
+					<div class="concrete_psd_01 concrete">
+					<img src="/imgs/replace_03.png"/>
+					<div class="phone_num">
+						<input type="text" placeholder="请输入手机号" class="user_phone"/>
+						<p class="test_point">请输入手机号！</p>
+						<button class="phone_btn">下一步</button>
+					</div>
+				</div>
+				<div class="concrete_psd_02 concrete">
+					<img src="/imgs/replace_05.png"/>
+					<div class="phone_num">
+						<p>已向您的手机号码<span class="user_test">182****0422</span>发送验证码，请在下方输入:</p>
+						<div class="huoqu_yzm">
+							<h1>手机验证码:</h1><input type="text" placeholder="输入验证码" class="yzm_text"/>
+							<button class="phone_yzm">重新获取(59s)</button>
+							<h2 id="verifyText">验证码有误</h2>
+						</div>
+						<div class="yzm_btn">
+							<button class="prev_btn">上一步</button><button class='next_btn'>下一步</button>
+						</div>
+					</div>
+				</div>
+				<div class="concrete_psd_03 concrete">
+					<img src="/imgs/replace_09.png"/>
+					<div class="phone_num">
+						<p><img src="/imgs/right.png"/> 恭喜你！验证成功，请重置密码:</p>
+						<div><label>新密码：</label><input type="text" class="new_psd" placeholder="至少6位字符"/></div>
+						<div><label>再次输入：</label><input type="text" class="second_new_psd"/></div>
+						<h3>两次密码输入不一致！</h3>
+						<button class="finished_psd">完成</button>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/replace_psd.js?v=90c1841832"></script>
+		<script type="text/javascript">
+		
+		    
+		</script>
+	</body>
+</html>

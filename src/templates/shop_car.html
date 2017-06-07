@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/shop_car.css?v=fcb6a3399d" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/layer.css?v=3b016c7cd4">
+		<script type="text/javascript" src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script type="text/javascript" src="/js/layer.js?v=2d3d7e0fdc"></script>
+		<script type="text/javascript" src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+		<script type="text/javascript" src="/js/shop_car_top.js?v=2209db9f38"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerTop') %>
+			<div class="searchBox">
+				<div class="icon">
+					<a href="show.html"><img src="/images/icon.png"></a>
+				</div>
+				<div class="search-Text" style="margin-left:462px;">
+					<div class="search-Text-top">
+						<p>
+							
+							<input type="text" placeholder="搜索您感兴趣的商品" id="searchInp">
+						</p>
+						<span id="seekBtn">搜索</span>
+						<div class="searchResult">
+							
+							<ol class="searchResult-list" id="searchResult-list">
+								
+							</ol>
+						</div>	
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			</div>
+
+            <div class="car_box">
+            	<!--
+            	购物车没商品的时候
+            -->
+            <div class="no_sp" style="display: none;">
+            	<div class="shop_url">
+            	<p>
+				<a href="#">首页</a><img src="/imgs/find.png" alt="" /><a href="#">我的购物车</a>
+				</p>
+				</div>
+				<div class="shop_go">
+					<img src="/imgs/gg.png" alt="" />
+					<span>购物车没有商品哦，赶紧去</span><a href="#">逛逛吧<img src="/imgs/11.png" alt="" /></a>
+				</div>
+            </div>
+            <!--
+            	有商品的时候
+            -->
+            <div class="have_sp">
+            	<ul class="sp_head">
+            		<li style="padding-left:20px;"><input type="checkbox" class="checkAll"/>全选</li>
+                    <li style="padding-left:129px;">商品信息</li>
+                    <li style="padding-left:390px;">单价（元）</li>
+                    <li style="padding-left:94px;">数量</li>
+                    <li style="padding-left:99px;">金额</li>
+                    <li style="padding-left:130px;">操作</li>
+            	</ul>
+            	<div class="assem_sp">
+            	  
+            	 
+            	</div>
+            	
+            	<div class="checkall_price">
+            			<ul>
+            				<li><input type="checkbox" class="checkAll"/><label for="check_all">全选</label></li>
+            				<li id="deleteAll"><a href="javascript:;" style="color:#666">删除选中商品</a></li>
+            				<li>已选商品<span id="spLength">0</span>件 </li>
+            				<li><small>总价（不含运费和税)</small><span id="Zcost"></span></li>
+            				<li><button type="button" id="Clearing">结算</button></li>
+            			</ul>
+            	</div>
+            </div>
+            <div class="car_line"></div>
+            <div class="huan_like" id="user_replace">
+					<h1>猜你喜欢</h1>
+					<!--<p><span>换一批</span><img src="/imgs/fenlei_55.png"/></p>-->
+				</div>
+				<section class="fiery" id="userReplace_like">
+					    <div class="classify-content">
+					
+                        </div>
+					</section>
+					</div>
+		</div>
+
+		
+
+		<script type="text/javascript" src="/js/picture.js?v=90c1841832"></script>
+		<script type="text/javascript" src="/js/shop_car.js?v=2cad4fb6ba"></script>
+		
+		    
+		
+	</body>
+</html>

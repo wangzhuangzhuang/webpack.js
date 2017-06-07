@@ -1,0 +1,334 @@
+.box {
+  display: -webkit-box;
+  display: box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+}
+.orient {
+  -webkit-box-orient: vertical;
+  -wmoz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -mst-box-orient: vertical;
+  orient: vertical;
+}
+.flex {
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -o-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+html{
+  font-size: 100px
+}
+body{
+  font-size: 16px
+}
+/* 全局定位 */
+.login_page {
+  width: 100%;
+  height: 7.8rem;
+}
+.logo_head {
+  width: 12rem;
+  height: 1rem;
+  margin: 0 auto;
+}
+.logo_head img {
+  vertical-align: middle;
+}
+.logo_head h1 {
+  height: 1rem;
+  line-height: 1rem;
+  float: left;
+}
+.logo_head ul {
+  float: right;
+}
+.logo_head li {
+  float: left;
+  padding-left: 0.46rem;
+  font-family: PingFang SC;
+  font-size: 0.2rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1rem;
+  text-align: center;
+  color: #666666;
+}
+.logo_head li img {
+  margin-right: 0.07rem;
+}
+.login_content {
+  width: 100%;
+  height: 6.8rem;
+  background: url(../imgs/login_bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+.login-box {
+  width: 12rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.login-box-wrap {
+  width: 384px;
+  height: 429px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6.5px 0.5px rgba(23, 23, 23, 0.08);
+  border: solid 0.8px #e6e6e6;
+  float: right;
+  margin-right: 0.8rem;
+  margin-top: 1.35rem;
+  /*----------------------------------------输入错误提示--------------------------------------------*/
+}
+.login-box-wrap h1 {
+  width: 100%;
+  padding: 0.2rem 0 0.03rem 0;
+  font-family: FZLanTingHei;
+  font-size: 0.22rem;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #000000;
+}
+.login-box-wrap p {
+  width: 3.12rem;
+  height: 0.4rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  border: solid 1px #a0a0a0;
+  line-height: 0.4rem;
+  display: -webkit-box;
+  display: box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+}
+.login-box-wrap p label {
+  display: block;
+  height: 0.3rem;
+  width: 0.45rem;
+  margin: 0.04rem 0;
+  border-right: 1px solid #a0a0a0;
+  text-align: center;
+}
+.login-box-wrap p input {
+  display: block;
+  height: 0.38rem;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -o-box-flex: 1;
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 0.16rem;
+  font-size: 0.14rem;
+}
+.login-box-wrap p i {
+  display: block;
+  width: 0.33rem;
+  height: 0.4rem;
+  position: relative;
+}
+.login-box-wrap p i img {
+  position: absolute;
+  left: 0;
+  top: 0.13rem;
+}
+.login-box-wrap p i img:nth-of-type(2) {
+  display: none;
+}
+.login-box-wrap .point {
+  width: 3.12rem;
+  height: 0.24rem;
+  margin: 0 auto;
+  line-height: 0.24rem;
+  padding-top: 0.07rem;
+  color: #e32e2c;
+  font-size: 0.12rem;
+  display: none;
+}
+.login-box-wrap .point img {
+  vertical-align: middle;
+  margin-right: 0.13rem;
+}
+.login-box-wrap .same_number {
+  width: 3.12rem;
+  height: 0.24rem;
+  margin: 0 auto;
+  line-height: 0.24rem;
+  padding-top: 0.07rem;
+  color: #e32e2c;
+  font-size: 0.12rem;
+  display: none;
+}
+.login-box-wrap .same_number a {
+  text-decoration: underline;
+  padding-left: 0.04rem;
+  color: #e32e2c;
+}
+.login-box-wrap .forget {
+  width: 3.12rem;
+  margin: 0 auto;
+  padding: 0.18rem 0 0.19rem 0;
+}
+.login-box-wrap .forget div {
+  display: inline-block;
+  font-family: PingFang SC;
+  font-size: 0.12rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #666666;
+}
+.login-box-wrap .forget div input {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: url(../imgs/juxing.png) no-repeat 0 0;
+  background-size: cover;
+  outline: none;
+  margin-right: 0.14rem;
+  vertical-align: middle;
+}
+.login-box-wrap .forget div input:checked {
+  background: url(../imgs/dui.png);
+}
+.login-box-wrap .forget a {
+  float: right;
+  font-family: PingFang SC;
+  font-size: 0.12rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #666666;
+}
+.login-box-wrap .forget .agree_xieyi {
+  color: #e32e2c;
+  font-size: 0.12rem;
+  padding-top: 0.1rem;
+  display: none;
+}
+.login-box-wrap .login-btn {
+  width: 3.12rem;
+  height: 0.48rem;
+  margin: 0 auto;
+}
+.login-box-wrap .login-btn button {
+  width: 3.12rem;
+  height: 0.48rem;
+  background-color: #3f231e;
+  outline: none;
+  font-family: FZDaHei-B02S;
+  font-size: 0.24rem;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  color: #fbfbfb;
+  border: none;
+}
+.login-box-wrap .login-hezuo {
+  width: 3.12rem;
+  margin: 0 auto;
+  font-family: FZLanTingHei;
+  font-size: 0.12rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #666666;
+  padding: 0.19rem 0 0.13rem 0;
+}
+.login-box-wrap .hezuo-logo {
+  width: 3.12rem;
+  margin: 0 auto;
+  padding-bottom: 0.12rem;
+}
+.login-box-wrap .free-regin {
+  width: 3.12rem;
+  margin: 0 auto;
+  font-family: FZLanTingHei;
+  font-size: 0.14rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  color: #666666;
+}
+.login-box-wrap .free-regin a {
+  color: #e32e2c;
+}
+/*-------------------------------------------免费注册----------------------------------------------------*/
+.test {
+  width: 3.12rem;
+  margin: 0 auto;
+  padding-top: 0.2rem;
+}
+.test input,
+.test button {
+  width: 1.45rem;
+  height: 0.4rem;
+  background: none;
+  border: solid 1px #a0a0a0;
+}
+.test input {
+  font-size: 0.14rem;
+  padding-left: 0.14rem;
+}
+.test button {
+  float: right;
+  font-size: 0.14rem;
+  font-family: PingFang SC;
+}
+/*-------------------------------------------用户协议----------------------------------------------------*/
+.user-agree {
+  position: absolute;
+  right: 1.48rem;
+  top: 0.9rem;
+  width: 7.92rem;
+  height: 5.7rem;
+  border: 9px solid #dcdbdb;
+  background-color: #fff;
+}
+.user-agree h1 {
+  font-family: PingFang SC;
+  font-size: 0.18rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  padding: 0.17rem 0;
+  background-color: #f5f5f5;
+}
+.user-agree div {
+  width: 100%;
+  height: 383px;
+  overflow: hidden;
+}
+.user-agree ul {
+  width: 100%;
+  height: 383px;
+  background: #fff;
+  overflow: auto;
+  line-height: 30px;
+  padding: 22px 21px 0 21px;
+}
+.user-agree p {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 21px;
+}
+.user-agree button {
+  width: 312px;
+  height: 48px;
+  background-color: #3f231e;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+}

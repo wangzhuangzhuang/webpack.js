@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心-收货地址</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<link rel="stylesheet" href="/css/submit_order.css?v=452efc4944" />
+		<link rel="stylesheet" href="/css/layer.css" />
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+		<script src="/js/layer.js"></script>
+		<style>
+			.deleteBtn{
+				padding-left: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+		<div class="user_recip_wrap" id="user_recip_wrap">
+			<div class="user_recip_ads">
+				<ul class="ads_list">
+					<li>收货地址</li>
+				</ul>
+				<div class="add_address">
+              	<p><label>收货人：</label><input type="text" id="add_name"/><span class="imperfect">您填写的信息不完整</span></p>
+              	<p class="city_4">
+              		<label>所在地区：</label>
+					<span><select id="s_province" name="s_province"></select><img src="/imgs/up_la.png" alt="" /></span>
+                    <span><select id="s_city" name="s_city" ></select><img src="/imgs/up_la.png" alt="" /></span>  
+                    <span><select id="s_county" name="s_county"></select><img src="/imgs/up_la.png" alt="" /></span>
+		        </p>
+		        <p class="detail_address"><label>详细地址：</label><textarea name="" rows="" cols="" placeholder="请填写详细地址" id="add_detail"></textarea></p>
+		        <p class="user_phone"><label>联系电话：</label><input type="text" id="add_phone"/></p>
+		        <p class="moren_address"><input type="checkbox" id="default_check" /><span>设为默认地址</span></p>
+		        <button class="confirm_btn">保存收货地址</button>
+              </div>
+				<h1 style="padding:20px 0;">已添加收货地址</h1>
+				<div class="user_ads">
+					<ul>
+						<li>收货人</li>
+						<li>收货地址</li>
+						<li>联系电话</li>
+						<li>操作</li>
+					</ul>
+					<!--<ol>
+						<li>黄勋</li>
+						<li><p>北京北京市朝阳区朝阳门银河SOHOD座5楼楼二单元25</p></li>
+						<li>18210031234</li>
+						<li><span>编辑</span>|<label>删除</label></li>
+						<li><button>默认地址</button></li>
+					</ol>-->
+				</div>
+				
+			</div>
+			
+		</div>
+		</div>
+		</div>
+		<script src="/js/picture.js"></script>
+		<script class="resources library" src="/js/area.js?v=b3c58309db" type="text/javascript"></script>
+		<script src="/js/user_recip.js?v=5307da9258"></script>
+	</body>
+</html>

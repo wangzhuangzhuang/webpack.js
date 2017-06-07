@@ -1,0 +1,894 @@
+html{
+  font-size: 14px;
+}
+.commodity-style{
+    display: none;
+}
+#commodityS:hover{
+    .commodity-style{
+        display: block;
+    }
+}
+.details-header{
+    height: 58px;
+    line-height: 58px;
+    width: 100%;
+    clear: both;
+    li{
+       float: left;
+       background: url('../images/right.png') no-repeat right center;
+       padding-right: 25px;
+       margin-right: 10px;
+    }
+    li:last-child{
+        background: none;
+    }
+}
+/*-------------商品详情--------------------*/
+.details-box{
+    width: 100%;
+    height: 540px;
+    background: #FFFFFF;
+    padding-top: 40px;
+    padding-left: 40px;
+    clear: both;
+}
+.details-box-left{
+    float: left;
+    width: 484px;
+}
+.details-box-right{
+    float: right;
+    width: 628px;
+}
+.details-box-left-imgBox{
+    width: 100%;
+    height: 402px;
+    border: 1px solid #CCCCCC;
+}
+.details-box-left-imgBox-nav{
+    width: 82px;
+    height: 100%;
+    border-right: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    float: left;
+    li{
+        width: 100%;
+        height: 80px;
+        background: #F3F3F3;
+        border-bottom:1px solid #FFFFFF ;
+        img{
+            display: block;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    li.active{
+         background:url('../images/border.png') no-repeat #F3F3F3;
+    }
+    li:last-child{
+        border: none;
+    }
+}
+
+.details-box-left-imgBox-img{
+   width: 400px;
+   height: 400px;
+   float: right;
+   img{
+       display: block;
+       width: 400px;
+       height: 400px;
+   }  
+}
+.share-collect{
+    padding-top: 15px;
+     line-height: 20px;
+    a{
+        color: #666666;
+        padding-right:25px;
+       
+    }
+    img{
+        margin-right:8px;
+    }
+}
+/*right*/
+.details-box-right-title{
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: 1px dashed #EBEBEB;
+    margin-right: 10px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    .limit_time_btn{
+        width:600px;
+        margin:0 auto;
+        background:#ff9600;
+        color:#fff;
+        font-size:16px;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        margin-bottom:10px;
+        padding:8px;
+        display: none;
+    }
+}
+.limit_price{
+    display: inline-block;
+    color:#ff9600;
+    font-size:14px;
+    padding-left:20px;
+}
+.details-box-right-row{
+    height: 40px;
+    font-size: 14px;
+    position: relative;
+    padding-left:15px;
+    .title-text{
+        line-height: 40px;
+        padding-right: 30px;
+        color: #808080;
+    }
+    .now{
+        font-size:25px;
+        color: #e32e2c;
+        b{
+            font-size: 10px;
+        }
+    }
+    .former{
+        padding-left: 30px;
+        color: #808080;
+        text-decoration: line-through;
+    }
+    .loginBtn{
+        color: #ff9600;
+        padding: 3px 10px;
+        border: 1px solid #ff9600;
+    }
+    .tax{
+        text-decoration: initial;
+        color: #666666;
+        padding: 0;
+    }
+    .standard{
+        display: inline-block;
+        li{
+            display: inline-block;
+            padding: 7px 15px;
+            margin-right: 7px;
+            border: 1px solid #CCCCCC;
+             cursor:pointer;
+        }
+        li.active{
+            border-color: #ff9600;
+            position:relative;
+            &:after{
+                content:url('../images/dui.png');
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                right: 0;
+                bottom: -1px;
+            }
+        }
+    }
+    .freight{
+        text-decoration: none;
+        padding:0;
+        font-size: 12px;
+        b{
+            font-weight: inherit;
+            padding-right: 10px;
+            font-size:14px;
+        }
+    }
+    .number{
+        position: absolute;
+        width: 134px;
+        height: 30px;
+        border: 1px solid #CCCCCC;
+        top: 5px;
+        left:62px;
+        .add,.cut,input{
+           float: left;
+           height: 28px;
+        }
+        .add,.cut{
+            width: 37px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 28px;
+            cursor:pointer;
+        }
+        .add{
+            background: url('../images/add.png') no-repeat center center #f6f6f6;
+        }
+        .cut{
+            background: url('../images/cut.png') no-repeat center center #f6f6f6;
+        }
+        .addClick{
+              background: url('../images/add.png') no-repeat center center #f2f2f2;
+        }
+        .cutClick{
+            background: url('../images/cut.png') no-repeat center center #f2f2f2;
+        }
+        input{
+            width: 58px;
+            border: none;
+            outline: none;
+            text-align: center;
+        }
+    }
+    .integral{
+        background: url('../images/integral.png') no-repeat left center;
+        text-decoration: none;
+        padding-left: 20px;
+        b{padding-right: 5px;}
+    }
+    .quan{
+        background-image: url('../images/quan.png');
+        padding-left: 20px;
+        b{
+            font-size:14px;
+            font-weight: normal;
+            padding:0 10px;
+        }
+        a{
+            color:#ff9600;
+        }
+    }
+}
+.row2{
+      border-bottom: 1px dashed #EBEBEB; 
+      margin-right: 10px;
+}
+.row3{
+    margin-top: 10px;
+}
+.row4{
+    height: 45px;
+    margin: 15px 0;
+    overflow: hidden;
+    button{
+        float: left;
+        height: 45px;
+        width: 158px;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        cursor:pointer;
+    };
+    .purchase{
+        background: #ff9600;
+       
+    }
+    .join{
+        border: 1px solid #ff9600;
+        margin-left: 20px;
+        color:#ff9600;
+        background: url('../images/shop-car.png') no-repeat 20px center;
+        padding-left: 25px;
+    }
+}
+.row5{
+    .title-text{padding-right: 16px;}
+}
+
+
+/*保证*/
+.shop-guarantee{
+    width: 100%;
+    height: 53px;
+    background: #FFFFFF;
+    margin: 20px 0;
+    li{
+        height: 100%;
+        float: left;
+        width: 25%;
+        background: url() no-repeat 40px center;
+        padding-top:8px;
+        h1,p{
+            height: 20px;
+            line-height: 20px;
+            padding-left: 85px;
+        }
+        h1{
+           font-size: 17px; 
+           color: #666666;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    li:nth-of-type(1){
+        background-image: url('../images/gou.png');
+    }
+    li:nth-of-type(2){
+        background-image: url('../images/zheng.png');
+    }
+    li:nth-of-type(3){
+        background-image: url('../images/you.png');
+    }
+    li:nth-of-type(4){
+        background-image: url('../images/dian.png');
+    }
+    
+}
+/*-----------------超值搭配------------------------*/
+
+.overbalance{
+    width: 100%;
+    height: 278px;
+    background: #FFFFFF;
+    display: none;
+}
+.overbalance-header{
+    height: 36px;
+    border-bottom: 1px solid #3f231e;
+    span{
+        color: #FFFFFF;
+        background: #3f231e;
+        text-align: center;
+        line-height: 35px;
+        display: block;
+        height: 35px;
+        width:114px ;
+    }
+}
+.overbalance-content{
+    width: 100%;
+    height:242px;
+    clear: both;
+}
+.overbalance-content-left{
+    width: 910px;
+    float: left;
+    height: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    div{
+        width: 174px;
+        height: 100%;
+        background: url('../images/add2.png') no-repeat right 67px;
+        display: inline-block;
+    }
+    div:last-child{
+        background: none;
+    }
+    
+    dl{
+        width: 152px;
+        height: 100%;
+        border: 1px solid transparent;
+      
+        dt{
+            width: 150px;
+            height: 150px;
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        dd{
+            .original{
+                padding: 0;
+                text-align: center;
+                font-size: 14px;
+                span{
+                    font-size: 12px;
+                }
+            };
+        }
+    }
+    dl:hover{
+        border: 1px solid #CCCCCC;
+        cursor:pointer;
+    }
+}
+.overbalance-content-right{
+    height: 100%;
+    width: 290px;
+    float: right;
+    padding-top: 55px;
+    padding-right: 25px;
+    padding-left: 60px;
+    background: url('../images/equal.png')  no-repeat 7px 87px;
+    p:nth-of-type(1){
+        color: #bfbfbf;
+        span{
+            color: #e32e2c;
+            font-size: 25px;
+        }
+    }
+    p:nth-of-type(2){
+        color: #bfbfbf;
+        padding-top: 25px;
+        span:nth-last-of-type(1){
+           padding-right: 30px;
+        }
+        span:nth-of-type(2){
+            color: #ff9600;
+        }
+    }
+    p:nth-of-type(3){
+        padding-top: 20px;
+        button{
+            width: 111px;
+            height: 36px;
+            border: 2px solid #FF9600;
+            background: none;
+            outline: none;
+            color: #FF9600;
+        }
+    }
+}
+//---------------------品牌专区--------------------
+.brand_vip{
+    width:198px;
+    height:147px;
+    border-bottom:1px solid #ebebeb;
+    dl{
+        width:100%;
+        height:60px;
+        padding:14px 0 0 14px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-box;
+        display: -o-box;
+        dt{
+            width:60px;
+            height:60px;
+            border:1px solid #ebebeb;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        dd{
+            padding-left:10px;
+            p{
+                padding-top:10px;
+                color:#808080;
+                font-size:12px;
+            }
+        }
+    }
+    a{
+        width:87px;
+        height:30px;
+        display: block;
+        border:1px solid #ff9600;
+        color:#ff9600;
+        font-size:13px;
+        line-height: 30px;
+        text-align: center;
+        margin:0 auto;
+        margin-top:30px;
+    }
+}
+/*底部*/
+.footer{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.correlation{
+    width: 200px;
+    float: left;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    .correlation-header{
+        height: 38px;
+        line-height: 38px;
+        padding-left: 20px;
+        color: #3F231E;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .correlation-wrap{
+        padding: 0 10px;
+        li{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ebebeb;
+            img{
+                display: block;
+                width: 160px;
+                height: 160px;
+                margin: 0 auto;
+                margin-bottom: 7px;
+            }
+            .original{
+                padding-top: 5px;
+            }
+        }
+        li:last-child{
+            border: none;
+        }
+    }
+}
+.imgText{
+    float:right;
+    width: 970px;
+    header.activeFixed{
+        position: fixed;
+        top: 0;
+        z-index: 999;
+       
+    }
+}
+.imgText-header{
+    height:36px;
+    width: 970px;
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+}
+.tabList{
+   overflow: hidden;
+   height: 100%;
+   float: left;
+    li{
+        float:left;
+        width: 128px;
+        height: 100%;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        color: #999999;    
+    }
+    li.active{
+        background: #3f231e;
+        color: #FFFFFF;
+    }
+    li:last-child{
+        border-right: 1px solid #CCCCCC;
+    }
+}
+.imgText-header-right{
+    float: right;
+    height: 100%;
+    li{
+       float: left;
+       height: 100%;
+       width: 140px;
+       line-height: 35px;
+       text-align:center ;
+    }
+    li:nth-of-type(1){
+         background: url('../images/yard.png') no-repeat 105px center;
+         background-size: 15px 15px;
+         position: relative;
+         .arr{
+              position: absolute;
+              right: 7px;
+              top: 50%;
+              margin-top: -2px;
+              width: 0;
+              height: 0;
+              font-size: 0;
+              line-height: 0;
+              border-color: #666 transparent transparent;
+              border-style: solid dashed dashed;
+              border-width: 4px 4px 0;
+              -webkit-transition: -webkit-transform 0.2s ease-in;
+              -moz-transition: -moz-transform 0.2s ease-in;
+              -ms-transition: -ms-transform 0.2s ease-in;
+              -o-transition: -o-transform 0.2s ease-in;
+              transition: transform 0.2s ease-in;
+              -webkit-transform: rotateZ(180deg);
+              -moz-transform: rotateZ(180deg);
+              -ms-transform: rotateZ(180deg);
+              -o-transform: rotateZ(180deg);
+              transform: rotateZ(180deg);
+         }
+    }
+    li:nth-of-type(1):hover{
+        .arr{
+          -webkit-transform: rotateZ(0deg);
+          -moz-transform: rotateZ(0deg);
+          -ms-transform: rotateZ(0deg);
+          -o-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+          }
+    }
+    li:nth-of-type(2){
+        border: 1px solid #FF9600;
+        color: #FF9600;
+        background: url('../images/shop-car.png') no-repeat 15px center;
+        background-size: 15px auto;
+        display: none;
+        padding-left: 10px;
+    }
+}
+.imgText-tabBoxP{
+    padding-top: 36px;
+}
+.imgText-tabBox{
+    width: 100%;
+}
+.imgBox{
+    width: 100%;
+    .imgList{
+        //border:1px solid #CCCCCC;
+        li{
+            display: block;
+        }
+        img{
+            width:968px;
+            display: block;
+        }
+        li:last-child{
+            overflow: hidden;
+            img{
+                display: block;
+                width: 50%;
+                height: auto;
+                float: left;
+            }
+        }
+    }
+}
+.img-footer{
+    margin-top: 10px;
+    h1{
+        height: 50px;
+        line-height: 50px;
+        color: #666666;
+        a{
+            float: right;
+            line-height: 50px;
+            background: url('../images/sua.png') no-repeat right center;
+            color: #666666;
+            padding-right:40px;
+            margin-right: 10px;
+        }
+    }
+}
+.guessBox{
+    overflow: hidden;
+    dl{
+        float: left;
+        width: 220px;
+        height: 318px;
+        border: 1px solid #cccccc;
+        background: #FFFFFF;
+        margin-right: 29.333px;
+        img{
+            display: block;
+            width: 218px;
+            height: 218px;
+        }
+    }
+    dl:last-child{
+        margin: 0;
+    }
+    dd{
+       width: 94%;
+       margin: 0 auto;
+       border-top: 1px solid #CCCCCC;
+       padding-top: 15px;
+       .apostropheText{
+           color: #000000;
+           line-height: 25px;
+           margin-bottom: 5px;
+       }
+    }
+    .apostropheText{
+        height: 45px;
+    }
+}
+
+
+/*评论*/
+.textBox{
+    border: 1px solid #CCCCCC;
+    padding: 20px 15px;
+    background: #FFFFFF;
+    border-top: none;
+    display: none;
+}
+.textBox-list{
+    width: 100%;
+    overflow: hidden;
+    color:#666; 
+}
+#textBox-list{
+    .user_word{
+    width:100%;
+    color:#666; 
+   text-align: center;
+    p{
+        padding-top:15px;
+        font-size:16px;
+    }
+    img{
+        margin-top:30px;
+    } 
+    }
+}
+.personage{
+    width: 850px;
+    background:#fafafa;
+    float: right;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    h1{
+        overflow: hidden;
+        color: #666666;
+        height: 35px;
+        border-bottom:1px dashed #EBEBEB;
+        time{
+            float: right;
+            font-size: 12px;
+        }
+    }
+    .text{
+        color: #999999;
+        line-height: 20px;
+        padding-top: 18px;
+        font-size: 12px;
+    }
+}
+.personage-head{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    left: -80px;
+}
+.personage-littleImg{
+    clear: both;
+    margin-top:12px;
+    li{
+        float: left;
+        width: 60px;
+        height: 60px;
+        border: 2px solid transparent;
+        margin-right: 4px;
+        overflow: hidden;
+        margin-top:20px;
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+    li.add{
+        cursor:url("../images/add.png"),auto;
+    }
+    li.cut{
+        cursor:url("../images/cut.png"),auto;
+    }
+    li.active{
+        border-color: #FF9600;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border:6px solid #FF9600 ;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            bottom: -14px;
+            left: 50%;
+            margin-left: -6px;
+            z-index: 100;
+        }
+    }
+}
+.personage-bigImg{
+    clear: both;
+    padding-top: 10px;
+    display: none;
+    img{
+        width:237px;
+        height:auto;
+    }
+}
+
+/*分页*/
+.pagingBox{
+    margin-top: 130px;
+    overflow: hidden;
+    .paging{
+        float: right;
+    }
+    .ui-paging-container{
+        height: 38px;
+        ul{
+            height: 100%;
+        }
+        li{
+            height: 37px;
+            width: 37px;
+            line-height:37px;
+            padding: 0;
+            border: 1px solid #cccccc;
+            border-radius: 0;
+            color: #666666;
+        }
+        li.focus{
+            border: none;
+            background: none;
+            color: #000000;
+        }
+        li:hover{
+            background: none;
+            color: #000000;
+            border-color: #000000;
+        }
+        .js-page-prev{
+            width: 98px;
+        }
+        .js-page-next{
+            width: 98px;
+        }
+        .ui-pager-disabled{
+            border: 1px solid #000000;
+            background: none;
+            color: #000000;
+        }
+        .ui-pager-disabled:hover{
+            border: 1px solid #000000;
+        }
+        .ui-paging-ellipse{
+            border: none;
+        }
+    }
+    .js-page-first{
+        display: none;
+    }
+    .js-page-last{
+        display: none;
+    }
+}
+/*鼠标按下样式*/
+.row4 .clickStyle{
+   background:#ff8400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

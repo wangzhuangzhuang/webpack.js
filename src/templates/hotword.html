@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc">
+		<link rel="stylesheet" href="/css/pc_classify.css?v=768a99a900" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/show.css?v=52c72bd746">
+		<script src="/js/jquery.js?v=46639776ff"></script>
+		<script src="/js/pc_classify.js?v=fdf69ce397"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="sp_list">
+				<div class="sp_result">
+					<div>全部结果</div>
+					<ol id="selectBox">
+						<li></li>
+						<li></li>
+						<li></li>
+
+					</ol>
+				</div>
+
+				<div class="all_list">
+					<div class="sp_show">
+						<ol class="sort_list">
+							<li data-order="0" class="active">
+								<a href="javascript:;">综合排序</a>
+							</li>
+							<li data-order="1">
+								<a href="javascript:;">销量 <img src="/imgs/fenlei_07.png" alt="" /></a>
+							</li>
+							<li data-order="2" class="sp_price">
+								<a href="javascript:;">价格 <img src="/imgs/fenlei_10.png" alt="" /></a>
+							</li>
+						</ol>
+						<p>
+							<span class="more_num">1</span><span class="figured_num">/10</span>
+							<button class='btn_prev'><img src="/imgs/left_btn.png"/></button><button class='btn_next'><img src="/imgs/fenlei_14.png"/></button>
+						</p>
+					</div>
+
+					<section class="classifyBox fiery">
+
+					</section>
+					<div class="jump_page">
+						<div class='pager-list'></div>
+					</div>
+					<div class="geuss_like">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="/js/picture.js?v=90c1841832"></script>
+        <script src="/js/hotword.js?v=c222bca35a"></script>
+	</body>
+
+</html>

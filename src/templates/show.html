@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc">
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/show.css?v=52c72bd746">
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/jquery.lazyload.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="wrap">
+			 <%- include('_partial/headerHTML') %>
+			<div class="imgBox" id="imgBox">
+				<ul id="imgBox-img">
+					
+				</ul>
+				<ol id="imgBox-bottomNav">
+					<div>
+					
+					</div>
+				</ol>
+			</div>
+			<div class="content">
+				<nav class="styleBox" id="styleBox">
+					
+				</nav>
+				<section class="classifyBox hot" id="hot" style="height: 689px;">
+					<header class="leftRight-box aRightBorder">
+						<div class="leftBox"></div>
+						<div class="rightBox rightNav" id="hot_header">
+						
+						</div>
+					</header>
+					<div class="classify-content">
+						<div class="leftRight-box">
+							<div class="leftBox leftBox2">
+								<ol class="leftBox-top" id="hot_big_brand">
+									
+								</ol>
+								<div class="leftBox-bottom">
+									<section class="dlBox" id="brand_goods">
+									</section>
+									<button class="prevBtn"></button>
+									<button class="nextBtn"></button>
+								</div>
+							</div>
+							<div CLASS="rightBox rightBox2" id="small_brand">
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="classifyBox Boutique" id="Boutique" style="height:334px;">
+					<header class="leftRight-box">
+						<div class="leftBox"></div>
+					</header>
+					<div class="classify-content" id="BoutiqueBox">
+						
+					</div>
+				</section>
+				<section class="classifyBox infant" id="infant" style="height: 553px;">
+				
+				</section>
+				<section class="classifyBox makeUp" id="makeUp" style="height: 553px;">
+					
+				</section>
+				<section class="classifyBox nutrition" id="nutrition" style="height: 553px;">
+					
+				</section>
+				<section class="classifyBox cate" id="cate" style="height: 553px;">
+					
+				</section>
+			    
+			    <section class="classifyBox fiery" id="fiery">
+					<header class="leftRight-box aRightBorder">
+						<div class="leftBox"></div>
+					</header>
+					<div class="classify-content" id="BaoPinBox">
+						
+                                            
+					</div>
+
+				</section>
+
+				<div class="storey" id="storey">
+					<article>
+						<a href="shop_car.html">
+							<img src="/images/NavIcon (a).png">
+							<span>购物车</span>
+						</a>
+					</article>
+					<article>
+						<a href="#infant">
+							<img src="/images/NavIcon (b).png">
+							<span>母婴护理</span>
+						</a>
+					</article>
+					<article>
+						<a href="#makeUp">
+							<img src="/images/NavIcon (c).png">
+							<span>美妆洗护</span>
+						</a>
+					</article>
+					<article>
+						<a href="#nutrition">
+							<img src="/images/NavIcon (d).png">
+							<span>营养健康</span>
+						</a>
+					</article>
+					<article class="s">
+						<a href="#cate">
+							<img src="/images/NavIcon (e).png">
+							<span>全球美食</span>
+						</a>
+					</article>
+					
+					
+					<article>
+						<a href="#">
+							<img src="/images/NavIcon (h).png">
+							<span>回到顶部</span>
+						</a>
+					</article>
+				</div>
+			</div>
+            <div class="sidebar">
+            	 <ol>
+            	 	<li><a href="#"><img src="/images/man.png"></a></li>
+            	 	<li><a href="shop_car.html"><img src="/images/cart.png"><span>购物车</span><b class="cartAmount" style="color: #FFFFFF;">0</b></a></li>
+            	 	<li><a href="my_kaquan.html" target="_blank"><img src="/images/ticket.png"></a></li>
+            	 	<!--<li>
+            	 		<a href="#"><img src="/images/sign.png"></a>
+            	 		<p>签到</p>
+            	 	</li>-->
+            	 	<li><a href="keep_sp.html" target="_blank"><img src="/images/star.png"></a></li>
+            	 </ol>
+            </div>
+            
+           <div class="wk_footer_side">
+                <div class="wk_footer">
+                  Copyright © 2016 <a href="javascript:;" target="_blank">CNKYHH.COM</a> <a title="Week Design By Haoweek.com" target="_blank">技术支持：ZHAOLEI ZMSJ</a>
+                  <br>备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank" title="京ICP备15045923号-3">京ICP备15045923号-3</a>                
+                </div>
+            </div>
+		</div>
+        <div class="footer">
+        	<div class="footer-content">
+        		<img src="/images/footerImg.png" class="footerImg"/>
+        		<div class="close-close"></div>
+        	</div>
+        </div>
+		
+		<script src="/js/countDown.js?v=0179855897"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/handlebars-v4.0.5.js?v=f08c62a1df"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/show.js?v=5eb5085e15"></script>
+	    <script id="module-header" type="text/x-handlebars-template">
+		    {{#each this}}
+                 <a href="preference.html?brand_id={{this.brand_id}}" data-brand_id="{{this.brand_id}}" target="view_window">{{this.brand_en_name}}</a>
+           {{/each}}
+		</script>
+		
+		<script id="specialModule" type="text/x-handlebars-template">
+					<header class="leftRight-box aRightBorder">
+						<div class="leftBox"></div>
+						<div class="rightBox rightNav">
+							{{#each  this.hot_keyword}}
+							   <a>{{this.category_keyword}}</a>
+							{{/each}}
+						</div>
+					</header>
+					<div class="classify-content">
+						<div class="classify-content-left">
+							<a href="javascript:;"><img class="lazy" data-original="{{this.cate_img.category_img}}"></a>
+						</div>
+						<div class="classify-content-centert">
+							{{#each this.cate_first_goods}}
+							<a href="details.html?goods_id={{this.goods_id}}">
+							<h4>{{this.brand_ch_name}}</h4>
+							<h5>{{this.goods_name}}</h5>
+							<p class="original">￥{{this.pc_price}}<span>￥{{this.market_price}}</span></p>
+							<img class="lazy" data-original="{{this.goods_main_url}}" />
+							</a>
+							{{/each}}
+							<ol>
+								{{#each this.cate_keyword}}
+								   <li><a href="hotword.html?k={{this.tj_keyword}}">{{this.tj_keyword}}</a></li>
+								{{/each}}
+							</ol>
+						</div>
+						<div class="classify-content-right">
+							{{#each this.cate_goods}}
+					           <li data-sku_id="{{this.sku_id}}" data-goods_id="{{this.goods_id}}">
+									<a href="details.html?goods_id={{this.goods_id}}" target="view_window">
+										<h4>{{this.brand_ch_name}}</h4>
+										<h5>{{this.goods_name}}</h5>
+										<p class="original">￥{{this.pc_price}}<span>￥{{this.market_price}}</span></p>
+										<img class="lazy" data-original="{{this.goods_main_url}}">
+									</a>
+							   </li>
+							{{/each}}
+							
+							
+						</div>
+					</div>
+		</script>
+		
+		<script id="specialModule2" type="text/x-handlebars-template">
+					<header class="leftRight-box aRightBorder">
+						<div class="leftBox"></div>
+						<div class="rightBox rightNav">
+							{{#each  this.hot_keyword}}
+							   <a>{{this.category_keyword}}</a>
+							{{/each}}
+						</div>
+					</header>
+					<div class="classify-content">
+						
+						<div class="classify-content-centert">
+							{{#each this.cate_first_goods}}
+							<a href="details.html?goods_id={{this.goods_id}}">
+							<h4>{{this.brand_ch_name}}</h4>
+							<h5>{{this.goods_name}}</h5>
+							<p class="original">￥{{this.pc_price}}<span>￥{{this.market_price}}</span></p>
+							<img class="lazy" data-original="{{this.goods_main_url}}" />
+							</a>
+							{{/each}}
+							<ol>
+								{{#each this.cate_keyword}}
+								   <li><a href="hotword.html?k={{this.tj_keyword}}">{{this.tj_keyword}}</a></li>
+								{{/each}}
+							</ol>
+						</div>
+						<div class="classify-content-right">
+							{{#each this.cate_goods}}
+					           <li data-sku_id="{{this.sku_id}}" data-goods_id="{{this.goods_id}}">
+									<a href="details.html?goods_id={{this.goods_id}}" target="view_window">
+										<h4>{{this.brand_ch_name}}</h4>
+										<h5>{{this.goods_name}}</h5>
+										<p class="original">￥{{this.pc_price}}<span>￥{{this.market_price}}</span></p>
+										<img class="lazy" data-original="{{this.goods_main_url}}">
+									</a>
+							   </li>
+							{{/each}}
+							
+							
+						</div>
+						<div class="classify-content-left">
+							<a href="javascript:;"><img class="lazy" data-original="{{this.cate_img.category_img}}"></a>
+						</div>
+					</div>
+		</script>
+		
+		<script id="BaoPin" type="text/x-handlebars-template">
+			{{#each this}}
+           <a href="details.html?goods_id={{this.goods_id}}" target="view_window" class='spStyle' data-sku_id="{{this.sku_id}}" data-goods_id="{{this.goods_id}}">
+                    <dl>
+                    	<dt>
+                    		<img class="lazy" data-original="{{this.goods_main_url}}">
+                    	</dt>
+                    	<dd>
+                    		<h1>{{this.goods_name}}</h1>
+                    		<p class="original">￥{{this.pc_price}}<span>￥{{this.market_price}}</span></p>
+                    	</dd>
+                    </dl>
+                </a>
+		    {{/each}}
+		   
+		</script>
+
+	   
+	</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-晒单评价</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/shopping_detail.css?v=97e2625598" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+		 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="shop_url">
+				<p>
+				全部<img src="/imgsfind.png" alt="" /><a href="#">交易管理</a><img src="/imgsfind.png" alt="" /><a href="#">我的订单</a><img src="/imgsfind.png" alt="" /><a href="#">晒单评价</a>
+				</p>
+			</div>
+			<div class="shop_detail" id="rated_imgs">
+				<div class="shop_anarchy" id="shop_rated">
+					
+					<span></span><p></p><span></span><p></p><span></span><p></p><span></span><p></p><span></span>
+					<ul>
+						<li>等待付款</li>
+						<li>等待发货</li>
+						<li>卖家已发货</li>
+						<li>确认收货</li>
+						<li>晒单评价</li>
+					</ul>
+					
+				</div>
+				<h1>晒单评价</h1>
+				<div class="all_wordimgs">
+				<div class="user_word">
+					<dl>
+						<dt><img src="/imgsuser_centre_03.png"/></dt>
+						<dd><p>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</p><span>水果味</span><h2><label for="">￥188.50</label><a>￥100.50</a></h2></dd>
+					</dl>
+					<div class="shop_word">
+						<textarea name="" rows="" cols="" maxlength="400"></textarea>
+						<p><small>0</small>/<span>400</span></p>
+						<div class="upload_imgs">
+							<img src="/imgsuser_centre_03.png"/>
+							<img src="/imgsuser_centre_03.png"/>
+							<img src="/imgsuser_centre_03.png"/>
+							<img src="/imgsuser_centre_03.png"/>
+							<img src="/imgsuser_centre_03.png"/>
+						 	<a href="javascript:;" class="file">
+                                  <input type="file" name="" id="">
+                              </a>
+                            <h3>共<label>0</label>张，还能上传<span>6</span>张</h3>
+				     </div> 
+				     
+					</div>  
+				</div>
+				
+				<div class="user_word">
+					<dl>
+						<dt><img src="/imgsuser_centre_03.png"/></dt>
+						<dd><p>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</p><span>水果味</span><h2><label for="">￥188.50</label><a>￥100.50</a></h2></dd>
+					</dl>
+					<div class="shop_word">
+						<textarea name="" rows="" cols="" maxlength="400"></textarea>
+						<p><small>0</small>/<span>400</span></p>
+						<div class="upload_imgs">
+							<img src="/imgsuser_centre_03.png"/>
+							<img src="/imgsuser_centre_03.png"/>
+						 	<a href="javascript:;" class="file">
+                                  <input type="file" name="" id="">
+                              </a>
+                      <h3>共<label>0</label>张，还能上传<span>6</span>张</h3>
+				     </div> 
+				     
+					</div>
+					  
+				</div>
+				
+				</div>
+				
+				<div class="submit_word">
+					<p><input type="checkbox" name="" id="" value="" /></p><label>匿名评价</label>
+					<button>提交申请</button>
+				</div>
+			</div>	
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script type="text/javascript">
+		 picture.init();
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		    
+		</script>
+	</body>
+</html>

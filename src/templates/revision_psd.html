@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/layer.css" />
+		<link rel="stylesheet" href="/css/revision_psd.css?v=d83ac90d2f" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/layer.js"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+		<title>修改密码</title>
+	</head>
+	<body>
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+		<div class="revision">
+			<div class="psd_box">
+				<ul>
+					<li>修改密码</li>
+				</ul>
+				<p><label>请输入原密码：</label><input type="text" class="former_psd"/><span class="pwd_no">与原密码不符</span></p>
+				<p><label>请输入新密码：</label><input type="text" placeholder="至少6位字符" class="revision_new_psd"/></p>
+				<p><label>确认新密码：</label><input type="text" class="revision_new_second"/><span class="pwd_same">两次密码不一致</span></p>
+				<button class="revision_btn" id="revision_btn">保 存</button>
+			</div>
+		</div>
+		   
+		</div>
+		</div>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-微营销注册</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/shopping_detail.css?v=97e2625598" />
+		<link rel="stylesheet" href="/css/submit_order.css?v=452efc4944" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+	</head>
+
+	<body>
+		<div class="wrap" style="background:#FFFFFF;display: none;">
+			<div class="box_bg">
+			   <%- include('_partial/headerHTML') %>
+			</div>
+			<section>
+				<div class="wei_banner">
+					<label><img src="/imgs/wei_login_03.png"/></label>
+					<label><img src="/imgs/wei_login_05.png"/><a href="javascript:;" class="apply_wei">我要申请</a></label>
+					<label><img src="/imgs/wei_login_06.png"/></label>
+					<label><img src="/imgs/wei_login_08.png"/></label>
+					<label><img src="/imgs/wei_login_09.png"/></label>
+				</div>
+
+				<div class="wei_regin"  style="display: none;">
+					<div class="shop_url" style="background:#FFFFFF">
+						<p>
+							<a href="#">首页</a><img src="/imgs/find.png" alt="" />
+							<a href="#">微代理</a>
+						</p>
+					</div>
+
+					<div class="user_recip_wrap" id="user_recip_wrap" style="width:1200px;margin:0 auto;">
+						<div class="user_recip_ads" style="margin:0 1px;padding-top:5px;">
+							<dl class="user_head">
+								<dt><img src="/imgs/head.png" id="user_img"/></dt>
+								<dd id="user_Name">我是一只小鸟</dd>
+							</dl>
+							<div class="add_address" id="add_idcard">
+								<p><label>姓名：</label><input type="text" placeholder="请务必填写真实姓名，该姓名将用于海关清关核对" id="add_name" /><span id="prompt"></span></p>
+								<p class="user_phone"><label>身份证号码：</label><input type="text" placeholder="请务必填写真实身份证，该身份证将用于海关清关核对" id="add_number" /></p>
+								<p><label>手机号码：</label><span id="phone"></span></p>
+
+								<div class="upload_imgs">
+									<label style="width: 122px;">身份证图片上传：</label>
+									<div class="pload_imgsBox">
+										<div class="upload_imgs-fileLeft" id="container">
+											<div class="inputBox" id="selectfiles">
+	
+												<section id="sec1">
+													
+												</section>
+											</div>
+											<p class="tishi">示例</p>
+											<div class="imgBox">
+												<img src="/imgs/zhen_img_01.png" />
+											</div>
+										</div>
+										<section></section>
+										<div class="upload_imgs-fileRight" id="container2">
+											<div class="inputBox" id="selectfiles2">
+	
+												<section id="sec2">
+													
+												</section>
+	
+											</div>
+											<p class="tishi">示例</p>
+											<div class="imgBox">
+												<img src="/imgs/shen_img_02.png" data-required="true" data-descriptions="picture" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tishi_word">
+									<label> 温馨提示：</label>
+									<ul>
+										<li>1、上传的身份证以示例为准清晰、可观,以免影响您的审核结果;</li>
+
+									</ul>
+								</div>
+								<button class="confirm_btn" id="saveBtn" type="button">提交审核</button>
+								<div id="postfiles2"></div>
+							</div>
+
+						</div>
+						<div id="wei_suc">
+							<dl>
+								<dt><img src="/imgs/wei_suc.png"/></dt>
+								<dd>
+									<h1>提交成功</h1>
+									<p>申请已提交，3个工作日内审核完毕，结果会以短信的形式发送到您注册时的手机号上，请注意查收...</p>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</div>
+		</div>
+		<script type="text/javascript" src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script type="text/javascript" src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script type="text/javascript" src="/js/crypto-min.js?v=f484c60921"></script>
+	    <script type="text/javascript" src="/js/hmac-min.js?v=9f9f131b7e"></script>
+	    <script type="text/javascript" src="/js/sha1-min.js?v=6058ff06e8"></script>
+	    <script type="text/javascript" src="/js/base64.js?v=1562ca0bb9"></script>
+	    <script type="text/javascript" src="/js/plupload.full.min.js?v=05336e689b"></script>
+	    <script type="text/javascript" src="/js/weiImg.js?v=9559c82c7c"></script>
+		<script type="text/javascript" src="/js/picture.js?v=90c1841832"></script>
+		<script type="text/javascript" src="/js/wei_login.js?v=c38bd814e0"></script>
+		<script type="text/javascript">
+			$("#commodityS").on("mouseenter", function() {
+				$(this).find("ol").show();
+			})
+			$("#commodityS").on("mouseleave", function() {
+				$(this).find("ol").hide();
+			})
+		</script>
+	</body>
+
+</html>

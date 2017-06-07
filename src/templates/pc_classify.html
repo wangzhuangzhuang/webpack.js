@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc">
+		<link rel="stylesheet" href="/css/pc_classify.css?v=768a99a900" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/show.css?v=52c72bd746">
+	</head>
+	
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+				<%- include('_partial/headerHTML') %>
+			</div>
+		<div class="sp_list">
+			<div class="sp_result">
+				<div>全部结果</div>
+				<ol id="selectBox">
+					<li></li>
+					<li></li>
+					<li></li>
+				    <li></li>
+				</ol>
+			</div>
+			<ul class="sp_name">
+				<!--<li><label>国家：</label><div><a href="#">澳大利亚</a><a href="#">新西兰</a></div></li>
+				<li><label>品牌：</label><div><a href="#">爱他美</a><a href="#">贝拉米</a><a href="#">A2</a></div></li>
+				<li><label>分类：</label><div><a href="#">一段</a><a href="#">二段</a><a href="#">三段</a><a href="#">四段</a></div></li>-->
+			</ul>
+			<div class="all_list">
+			<div class="sp_show">
+				<ol class="sort_list">
+					<li data-order="0" class="active"><a href="javascript:;" >综合排序</a></li>
+					<li data-order="1"><a href="javascript:;" >销量 <img src="/imgs/fenlei_07.png" alt="" /></a></li>
+					<li data-order="2" class="sp_price"><a href="javascript:;" >价格 <img src="/imgs/fenlei_10.png" alt="" /></a></li>
+				</ol>
+				<p>
+					<span class="more_num">1</span><span class="figured_num">/10</span>
+					<button class='btn_prev'><img src="/imgs/left_btn.png"/></button><button class='btn_next'><img src="/imgs/fenlei_14.png"/></button>
+				</p>
+			</div>
+		
+		<section class="classifyBox fiery">
+					<!--<div class="classify-content">
+						<a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题商品标题</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                      
+					</div>-->
+                   
+				</section>
+				<div class="jump_page">
+					<div class='pager-list'></div>
+				</div>
+				<div class="geuss_like">
+				</div>
+				<!--<div class="huan_like">
+					<h1>猜你喜欢</h1>
+					<p><span>换一批</span><img src="/imgs/fenlei_55.png"/></p>
+				</div>-->
+				<!--<section class="fiery" id="guess_like">
+					<div class="classify-content">
+						<a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        </div>
+					</section>-->
+				</div>
+				</div>
+		</div>
+		<script src="/js/jquery.js?v=46639776ff"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/pc_classify.js?v=fdf69ce397"></script>
+		<script src="/js/classify_pc.js?v=46b2352d0f"></script>
+	</body>
+</html>

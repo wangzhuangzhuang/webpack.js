@@ -1,0 +1,463 @@
+*{margin:0;padding:0;text-decoration: none;list-style: none;}
+.box{
+    width:100%;
+    height:173px;
+    background: #fff;
+}
+/*------------------------------------分类列表-------------------------------------------------*/
+.sp_list{
+    width:1200px;
+    margin:0 auto;
+    font-family: Microsoft YaHei;
+}
+.sp_result{
+    width:1200px;
+    height:60px;
+    font-size:12px;
+    line-height: 60px;
+    overflow: hidden;
+    div,ol{
+        float: left;
+    }
+    ol{
+        overflow: hidden;
+    }
+    li{
+        float: left;
+    }
+    img{
+        width: 4px;
+        height: 8px;
+        margin:0 12px;
+    }
+    span img{
+         width: 12px;
+         height: 12px;
+         position: absolute;
+         top:6px;
+         right:-8px;
+    }
+    span:last-of-type{
+          background-color: #ffffff;
+          border: solid 1px #ff9600;
+          display: inline-block;
+          line-height: 24px;
+          padding:0 20px 0 11px;
+          position: relative;
+    }
+}
+.sp_name{
+    width:1200px;
+    margin-bottom:20px;
+    li{
+        width:1200px;
+        overflow: auto;
+        max-height: 150px;
+        line-height: 49px;
+        border-bottom:1px dashed #ededed;
+        background: #fff;
+        position: relative;
+        label{
+            font-size:13px;
+            float:left;
+            width: 90px;
+            height: 49px;
+            text-align: center;
+            line-height: 49px;
+            position: absolute;
+            left:0;
+            top:0; 
+        }
+        div{
+            float:left;
+            width:1000px;
+            max-height: 150px;
+            margin-left:90px;
+        }
+        a{
+            font-size:13px;
+            color:#000;
+            padding-right:35px;
+            display: inline-block;
+            line-height: 49px;
+        }
+    }
+    li:last-of-type{
+        border-bottom: none;
+        label{
+            border-bottom: none;
+        }
+    }
+}
+
+.sp_show{
+    width:1200px;
+    height:38px;
+    background:#fff;
+    line-height: 38px;
+    margin:25px 0 14px 0;
+    clear: both;
+    border: solid 1px #ccc;  
+    li{
+        float:left;
+        width: 96.5px;
+        height: 38px;
+        border-right: solid 1px #ccc;
+        text-align: center;
+        font-size:13px;
+    }
+    li.active{
+            border:1px solid #ff9600;
+            position: relative;
+            top: -1px;
+            left: -1px;
+        }
+    a{
+        color:#000;
+    }
+    img{
+        vertical-align: middle;
+    }
+    p{
+        float:right;
+        button{
+            height:38px;
+            width:30px;
+            border:none;
+            outline: none;
+            background: none;
+            margin-right:21px;
+        }
+    }
+    span{
+        color:#666;
+        font-size:15px;
+    }
+    span:nth-of-type(2){
+        margin-right:32px;
+    }
+}
+
+
+
+/*-----------------------------------------------------换一换猜你喜欢-------------------------------------------*/
+.geuss_like{
+    width:1200px;
+    height:16px;
+    border-top:1px dashed #000;
+    padding-top:37px;
+    //padding-bottom:21px;
+    background:#fff;
+}
+.huan_like{
+    width:1200px;
+    height:37px;
+     background:#fff;
+    h1{
+      font-family: FZLanTingHeiS-R-GB;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      color: #666666;
+      padding-left:20px;
+      float:left;
+    }
+    p{
+        float:right;
+        font-family: FZLanTingHeiS-R-GB;
+      font-size: 16px;
+      color: #666666;
+      img{
+          margin:0 16px 0 14px;
+          vertical-align: middle;
+      }
+    } 
+}
+.fiery{
+    background: #fff;
+}
+#guess_like{
+    a{
+    width: 220px;
+    height: 318px;
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+    margin-right:15px;
+    }
+    a:hover{
+        width: 220px;
+       height: 318px;
+       border: 1px solid #919090;  
+    }
+   dl{
+        width: 218px;
+          height: 318px;
+          margin:0 auto;
+          dt{
+              width:218px;
+              height:220px;
+              line-height: 218px;
+              text-align: center;
+              border:none;
+              img{
+              width:218px;
+              height:218px;
+              position:initial;
+              }
+          }
+          dd{
+              border-top:1px solid #ccc;
+          }
+        h1{
+            font-size:12px;
+            font-weight: normal;
+        }  
+        p{
+           font-size:17px; 
+           span{
+             font-size:12px;   
+           } 
+        }
+    } 
+}
+//-----------------------------------------------分页-----------------------------------------------
+.jump_page{
+    width:1200px;
+    background:#fff;
+    height:122px;
+    line-height: 122px;
+    text-align: center;
+    clear: both;
+}
+.pager-list {  
+    display: inline-block;   
+    font-size: 13px;  
+    width:auto;
+    height:122px;
+    margin:0 auto;
+    background:#fff;
+}  
+  
+    .pager-list > .pager {  
+        display: block;  
+        position: relative; 
+         width:auto;
+        padding-top:38px;
+    }  
+  
+    .pager-list ul li {  
+        list-style: none;  
+        float: left;  
+        margin: 0 3px;  
+        width: 38px;
+        height: 38px; 
+        font-size:13px;
+        margin:0 8px; 
+    }  
+  
+        .pager-list ul li.next,  
+        .pager-list ul li.prev {  
+             width: 98px;
+              height: 38px;
+              background-color: #ffffff;
+              border: solid 1px #3f231e; 
+              line-height: 38px;
+              a{
+                  border:none;
+                  width: 98px;
+              height: 38px;
+              }
+        }  
+    .pager-list ul li.next img{
+        margin-left:18px;
+    }
+    .pager-list ul li.prev img{
+        margin-right:18px;
+    }
+        .pager-list ul li.disable a {  
+            color: #666;  
+        }  
+  
+        .pager-list ul li.text {  
+            display: block;  
+            width:auto;
+           line-height:38px; 
+           font-size:13px; 
+            text-align: center;   
+            color: #666;  
+            margin:0 10px; 
+        }  
+  
+            .pager-list ul li.text input.go {  
+                width: 38px;
+              height: 38px;
+              margin:0 6px;
+              background-color: #ffffff;
+              border: solid 1px #cccccc;
+              text-align: center;
+            }  
+            .pager-list ul li.text select.go {  
+                width: 77px;
+                  height: 38px;
+                  text-align: center;
+                line-height: 38px;
+            }  
+            .pager-list ul li.text span.go {  
+                color: #666;  
+                display: inline-block;
+                margin-left: 30px;  
+                width: 77px;
+                  height: 38px;
+                  border: solid 1px #cccccc;
+                cursor: pointer;  
+                text-align: center;
+                line-height: 38px; 
+            }  
+  
+        .pager-list ul li a {  
+            display: block;    
+            line-height: 38px;  
+            text-align: center;  
+            color: #666;   
+            width: 38px;
+            height: 38px;  
+            border: solid 1px #cccccc;
+        }  
+  
+            .pager-list ul li a:hover,  
+            .pager-list ul li.active a {  
+               border:none; 
+            }  
+
+#commodityS:hover{
+    .commodity-style{
+        display: block;
+    }
+}
+/*-----------------------------------------剁手必买--------------------------------------------*/
+.chop_hand_img{
+    width:100%;
+    height:360px;
+    background: url("../imgs/duoshou_02.png") no-repeat;
+    background-position: center center; 
+    background-size:100% 100%;
+}
+#chop_hand{
+    margin-top:0;
+}
+.chop_type{
+    width:1200px;
+    margin:0 auto;
+    height:94px;
+    line-height: 94px;
+    text-align: center;
+    img{
+        width:30px;
+        height:30px;
+       margin-bottom:-4px;
+    }
+    span{
+        font-size: 26px;
+        color: #3f231e;
+        font-weight: bold;
+        display: inline-block;
+        padding:0 13px 0 14px;
+    }
+    small{
+        font-size: 14px;
+        color: #3f231e;
+        display: inline-block;
+    }
+}
+/*-----------------------------------------潮品混搭--------------------------------------------*/
+.chop_mixup_img{
+    width:100%;
+    height:400px;
+    //background: url("../imgs/chopbuy_02.png") no-repeat;
+    background-position: center center; 
+}
+.chop_mix_list{
+    width:1200px;
+    margin:0 auto;
+    a{
+        width: 590px;
+      height: 523px;
+      float:left;
+      background-color: #ffffff;
+      margin-top:20px; 
+      dl{
+        width:100%;
+        height:100%;
+        dt{
+            width:100%;
+            height:359px;
+            img{
+                width:100%;
+                height:100%;
+                transform: scale(0.7,0.7);
+                -ms-transform: scale(0.7,0.7);       /* IE 9 */
+                -webkit-transform: scale(0.7,0.7);   /* Safari and Chrome */
+                -o-transform: scale(0.7,0.7);        /* Opera */
+                -moz-transform: scale(0.7,0.7);
+            }
+        } 
+        dd{
+            width:550px;
+            display: block;
+            margin:0 auto;
+            border-top:1px solid #ccc;
+            padding-top:14px;
+            h1{
+                font-size: 25px;
+             font-weight: normal;
+             color: #ff9600;
+             display: inline-block;
+            }
+            span{
+                font-size: 18px;
+                 color: #999999;
+                 padding-left:24px;
+                 text-decoration: line-through;
+            }
+            small{
+                font-size: 14px;
+                color: #ff9600;
+                padding-left:24px;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: normal;
+                color:#000;
+                line-height: 34px;
+                padding-top:30px;
+                height:100px;
+                overflow: hidden;
+            }
+        }  
+      } 
+    }
+    a:nth-child(2n){
+        margin-left:20px;  
+      }
+      
+}
+
+//---------------搜索不到商品时--------------------
+.fiery{
+    width: 100%;
+    overflow: hidden;
+    color:#666;
+    text-align: center;
+    p{
+        padding-top:15px;
+        font-size:16px;
+    }
+    img{
+        width:68px;
+        height:68px;
+        margin-top:30px;
+    }
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-付款1</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/my_news.css?v=183c4d0e63" />
+		<style>
+			html,
+			body,
+			.wrap {
+				width: 100%;
+				height: 100%;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap" style="background:#F5F5F5">
+			<div class="box_bg">
+				 <%- include('_partial/headerTop') %>
+				<div class="searchBox">
+					<div class="icon">
+						<img src="/images/icon.png">
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="zhifu_detail">
+					<div class="sp_detail">
+						<h1><img src="/imgs/zhifu_01.png"/>订单提交成功，请尽快付款!
+						<small>请您在提交订单后30分钟内完成支付，否则订单会自动取消</small>
+					</h1>
+
+						<label id="message">收货信息：<span></span><span></span></label>
+						<div id="address"></div>
+					</div>
+
+					<div class="choose_zhifu">
+						<p>支付金额：<span id="sum"></span></p>
+						<div>
+							<input type="radio" name="choose" id="choose_wei" checked="" /><label for="choose_wei"><img src="/imgs/zhifu_wei.png"/></label>
+						</div>
+						<a href="javascript:;" id="paymentBtn">去支付</a>
+					</div>
+
+				</div>
+				<div class="zhifu_detail03" style="display: none;">
+					<p>请您及时付款，以便洋窝儿为您尽快处理哦！<span id="trade_no">订单号：1234526315423654</span> </p>
+					<h2>请您在提交订单后<span id="timeBox"></span>内完成支付，否则订单会自动取消</h2>
+					<h3>付款金额为：<span id="total_fee">￥337</span></h3>
+					<div class="saoma">
+						<h1><img src="/imgs/zhifu_01.png">扫一扫微信二维码付款吧~</h1>
+						<div><span id="codeImg"></span>
+							<label><img src="/imgs/zhifu_suc.png" class="shouji"></label></div>
+					</div>
+				</div>
+				<div class="zhifu_suc" style="display:none;">
+			   	<h1><img src="/imgs/zhifu_01.png"/>支付成功! 
+			   		<small>我们会在24小时内发货，请您耐心等待~</small>
+			   		<a href="#">返回我的订单</a>
+			   	</h1>
+			   	<h2><img src="/imgszhifu_02.png"/>分享赚**元: <span>去分享 >></span>
+                   <div class='share'>
+                   <div class="bdsharebuttonbox"><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a></div> </h2>
+        
+			   	          <p>加入洋窝儿的微营销，分享链接到第三方平台（微博，微信，QQ等），小伙伴从你分享的链接进入洋窝儿购物， 你最高可以获得TA订单总额10%收益，进入“我的”—“微营销”查看</p>
+			   	
+			        </div>
+			
+		         </div>
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js"></script>
+		<script src="/js/picture.js"></script>
+		<script src="/js/payment.js"></script>
+        <script>
+        	window._bd_share_config = {
+				"common": {
+					"bdSnsKey": {},
+					"bdText": "asdasdsdasdsa",
+					"bdMini": "1",
+					"bdMiniList": false,
+					"bdPic": "",
+					"bdStyle": "1",
+					"bdSize": "16",
+					"bdText":"1423",
+					"bdDesc":"sdasd",
+					"bdUrl" : "https://ywdev.youngworld.com.cn/html/pc/templates/details.html?goods_id=212",
+					"bdPic":"http://yangwoer.oss-cn-beijing.aliyuncs.com/goods/3182518.jpeg@!height_width"
+				},
+				"share": {},
+				"image": {
+					"viewList": ["tsina", "tqq", "qzone", "weixin", "sqq"],
+					"viewText": "",
+					"viewSize": "16"
+				},
+				"selectShare": {
+					"bdContainerClass": null,
+					"bdSelectMiniList": ["tsina", "tqq", "qzone", "weixin", "sqq"]
+				}
+			};
+			with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+        </script>
+	</body>
+
+</html>

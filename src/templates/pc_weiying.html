@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>绑定收款账户</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/replace_psd.css?v=d4a8a3f663" />
+		<link rel="stylesheet" href="/css/commonality.css?v=3c79d69dc1">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+				<%- include('_partial/headerHTML') %>
+			</div>
+			<div class="weiying">
+				<!----------------------------------绑定收款账户---------------------------------------	-->
+				<div class="pc_replace" id="bindShow">
+					<div class="psd_find">
+						<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+					</div>
+					<div class="concrete_psd">
+						<div class="concrete_psd_01 concrete weiying_band">
+							<img src="/imgs/wei_01.png" />
+							<div class="wei_band" >
+								<div class="weixin_band" data-accout_type="2">
+									<p><img src="/imgs/weixin_01.png" /> 微信</p>
+									<span>未绑定</span>
+									<button class="weixin_btn unbunding" type="button" style="display: none;">解除绑定</button>
+								</div>
+								<div class="zhifu_band" data-accout_type="1">
+									<p><img src="/imgs/zhifubao.png" /> 支付宝</p>
+									<span>未绑定</span>
+									<button class="zhifu_btn unbunding" type="button" style="display: none;">解除绑定</button>
+								</div>
+							</div>
+							<button class="next_weibtn" type="button">下一步</button>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="band_which"  style="display: none;" id="weiBox">
+					<!----------------------------------微信---填写绑定信息---------------------------------------	-->
+					<div class="pc_replace">
+						<div class="psd_find">
+							<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+						</div>
+						<div class="concrete_psd">
+							<div class="concrete_psd_02 concrete weiying_band">
+								<img src="/imgs/wei_02.png" />
+								<div class="wei_phone">
+									<p><label>微信账户名:</label><input type="" name="" id="weiXname" value="" placeholder="请输入微信昵称" /><span class="hint" id="wei_hint">微信账户名不能为空</span></p>
+									<h6>输入微信显示的昵称，用于财务发放收益、验证的凭证</h6>
+									<div>
+										<span>示例：</span><img src="/imgs/wei_01 (2).png" />
+									</div>
+									<button class="wei_prevbtn">上一步</button><button class="wei_nextbtn">下一步</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!----------------------------------微信---填写手机号---------------------------------------	-->
+					<div class="pc_replace"  style="display: none;">
+						<div class="psd_find">
+							<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+						</div>
+						<div class="concrete_psd">
+							<div class="concrete_psd_03 concrete weiying_band">
+								<img src="/imgs/wei_03.png" />
+								<div class="wei_img" id="container">
+									<div class="wei_explain">
+										<button type="button" id="selectfiles">收款人二维码上传</button><span class="hint" id="wei_img_hint">请选择收款人二维码图片</span>
+										<ul>
+											<li>第一步：打开微信</li>
+											<li>第二步：点击右上角"+"，选择"收付款"</li>
+											<li>第三步：点击"我要收款"</li>
+											<li>第四步：截屏</li>
+											<li>第五步：发送到电脑上</li>
+										</ul>
+									</div>
+									<div class="shili">
+										<span>示例：</span>
+										<img src="/imgs/weiying_00.png" />
+									</div>
+									<div class="btn">
+										<button class="wei_imgbtn_prev">上一步</button><button class="wei_imgbtn_next">下一步</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!----------------------------------微信---确认绑定---------------------------------------	-->
+					<div class="pc_replace" style="display: none;">
+						<div class="psd_find">
+							<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+						</div>
+						<div class="concrete_psd">
+							<div class="concrete_psd_04 concrete weiying_band">
+								<img src="/imgs/wei_04.png" />
+								<div class="user_name">
+									<p><span>账户名：</span><label id="addweiName">卿似月下海棠</label></p>
+									<div class="user_erwei">
+										<span>收款人二维码：</span>
+										<h1><img id="weiImg" /><small>请保证账户正确，否则无法提现</small></h1>
+									</div>
+									<a class='band_btn' id="saveBtn">绑定</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!----------------------------------------------绑定支付宝账户-------------------------------------------------------->
+				<div class="band_which" style="display: none;" id="zhiBox">
+					<!----------------------------------支付宝-----填写绑定信息---------------------------------------	-->
+					<div class="pc_replace">
+						<div class="psd_find">
+							<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+						</div>
+						<div class="concrete_psd">
+							<div class="concrete_psd_02 concrete weiying_band">
+								<img src="/imgs/wei_02.png" />
+								<div class="wei_phone">
+									<p><label>支付宝账户名:</label><input type="" name="" id="zhifName" value="" placeholder="请输入支付宝真实姓名" /><span class="hint" id="zhif_hint">支付宝账户名不能为空</span></p>
+									<h6>输入支付宝的真实姓名，用于财务发放收益、验证的凭证</h6>
+									<div>
+										<span>示例：</span><img src="/imgs/zhi_00.png" />
+									</div>
+									<button class="zhif_prevbtn">上一步</button><button class="zhif_nextbtn">下一步</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!----------------------------------支付宝-----填写手机号---------------------------------------	-->
+					<div class="pc_replace" style="display: none;">
+						<div class="psd_find">
+							<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+						</div>
+						<div class="concrete_psd">
+							<div class="concrete_psd_03 concrete weiying_band">
+								<img src="/imgs/wei_03.png" />
+								<div class="wei_phone">
+									<p><label>支付宝绑定手机号:</label><input type="" name="" id="phoneText" value="" placeholder="请输入手机号" /><span class="hint" id="zhif_phone_hint">手机号不能为空</span></p>
+									<h6>输入支付宝的手机号，用于财务发放收益、验证的凭证</h6>
+									<button class="wzhi_phone_prevbtn">上一步</button><button class="zhi_phone_nextbtn">下一步</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!----------------------------------支付宝-----确认绑定---------------------------------------	-->
+					<div class="pc_replace" style="display: none;">
+						<div class="psd_find">
+							<a href="">首页</a><span><img src="/imgs/find.png"/>微代理</span><span><img src="/imgs/find.png"/>绑定收款账户</span>
+						</div>
+						<div class="concrete_psd">
+							<div class="concrete_psd_04 concrete weiying_band">
+								<img src="/imgs/wei_04.png" />
+								<div class="zhi_username">
+									<p><span>支付宝真实姓名：</span><label id="addzhiFName"></label></p>
+									<p><span>支付宝绑定手机号：</span><label id="addzhiFPhone"></label></p>
+									<small>请保证账户正确，否则无法提现</small>
+									<button class="zhi_bandbtn">绑定</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script type="text/javascript" src="/js/sessionStorage.js?v=867b5aa996"></script>
+		<script type="text/javascript" src="/js/picture.js?v=fc2219cd2f"></script>
+		<script type="text/javascript" src="/js/crypto-min.js?v=f484c60921"></script>
+	    <script type="text/javascript" src="/js/hmac-min.js?v=9f9f131b7e"></script>
+	    <script type="text/javascript" src="/js/sha1-min.js?v=6058ff06e8"></script>
+	    <script type="text/javascript" src="/js/base64.js?v=1562ca0bb9"></script>
+	    <script type="text/javascript" src="/js/plupload.full.min.js?v=05336e689b"></script>
+	    <script type="text/javascript" src="/js/pc_weiying_img.js?v=e5fa14dba3"></script>
+		<script type="text/javascript" src="/js/pc_weiying.js?v=90b3d5273d"></script>
+		<script type="text/javascript">
+			picture.init();
+			$("#commodityS").on("mouseenter", function() {
+				$(this).find("ol").show();
+			})
+			$("#commodityS").on("mouseleave", function() {
+				$(this).find("ol").hide();
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-订单物流详情</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/shopping_detail.css?v=97e2625598" />
+		<link rel="stylesheet" href="/css/my_news.css?v=183c4d0e63" />
+	</head>
+	<body>
+		<div class="wrap" style="background:#FFFFFF">
+			<div class="box_bg">
+			 <header class="header leftRight-box">
+				<div class="leftBox">
+					<li>
+						<div href="javascript:;" class="a"><span class="Tuser_name">欢迎来到洋窝儿</span><i class="arr"></i>
+							<!--<div class="message">
+								<div class="news">
+									<span href="#">消息</span>
+									<span href="#">退出</span>
+								</div>
+								<header>
+									<img src="/images/dom17.png" />
+									<img src="/images/dom18.png" />
+									<p>我可享受<span>4</span>项特权</p>
+								</header>
+								<p class="ptext">距离<span>生日特权</span>还剩<span>50</span>天</p>
+								<section class="privilegeBox">
+									<dl>
+										<dt><img src="/images/dom19.png"></dt>
+										<dd>生日特权</dd>
+									</dl>
+									<dl>
+										<dt><img src="/images/dom19.png"></dt>
+										<dd>生日特权</dd>
+									</dl>
+									<dl>
+										<dt><img src="/images/dom19.png"></dt>
+										<dd>生日特权</dd>
+									</dl>
+									<dl>
+										<dt><img src="/images/dom19.png"></dt>
+										<dd>生日特权</dd>
+									</dl>
+								</section>
+							</div>-->
+						</div>
+						
+					</li>
+					<li id="loginBtn">
+						<div><a href="pc_login.html" style="padding: 0 10px;">登录</a></div>
+					</li>
+					<li id="reginBtn">
+						<div><a href="free_regin.html" style="padding: 0 10px;">注册</a></div>
+					</li>
+					
+				</div>
+				<div class="rightBox">
+					<li class="cart hrefB">
+						<div><a href="#">购物车<span class="cartAmount">(0)</span></a></div>
+					</li>
+					<li class="hrefB">
+						<div><a href="user_centre.html">我的订单</a></div>
+					</li>
+					<li class="hrefB">
+						<div><a href="user_centre.html">个人中心</a></div>
+					</li>
+					<li>
+						<div class="a" style="padding-right: 10px;">洋窝儿APP
+							<ol class="AppCode">
+								<a href="#">
+									<img src="/images/code.png" />
+									<span>下载APP</span>
+									<span>领取新人100</span>
+								</a>
+							</ol>
+						</div>
+					</li>
+					<li class="li1">
+						<div class="a">客服服务<i class="arr"></i>
+							<ol class="service">
+								<li><a href="javascript:;">帮助中心</a></li>
+								<li><a href="javascript:;">联系我们</a></li>
+							</ol>
+						</div>
+					</li>
+					<li class="li1">
+						<div class="a">更多<i class="arr"></i>
+							<ol class="more">
+							    <li><a href="javascript:;">关于我们</a></li>
+								<li><a href="javascript:;">收藏本站</a></li>
+							</ol>
+						</div>
+					</li>
+				</div>
+			</header>
+			<div class="searchBox">
+				<div class="icon">
+					<a href="show.html"><img src="/images/icon.png"></a>
+				</div>
+				<div class="search-Text">
+					<div class="search-Text-top">
+						<p>
+							<input type="text" placeholder="搜索您感兴趣的商品" id="searchInp">
+						</p>
+						<span id="seekBtn">搜索</span>
+						<div class="searchResult">
+							<!--<header class="searchResult-header">
+								<span>最近搜索</span>
+								<span></span>
+							</header>-->
+							<ol class="searchResult-list" id="searchResult-list">
+								
+							</ol>
+						</div>	
+					</div>
+					<div class="search-Text-bottom aRightBorder">
+						<a href="javascript:;">Devondale</a>
+						<a href="javascript:;">Blackmores</a>
+						<a href="javascript:;">爱他美</a>
+						<a href="javascript:;">Swisse</a>
+						<a href="javascript:;">A2</a>
+					</div>
+				</div>
+				<div class="guarantee">
+					<img src="/images/guarantee.png" />
+				</div>
+			</div>
+			<nav class="nav showNav">
+				<ul>
+					<li class="active" id="commodityS">
+						<a href="javascript:;">全部商品分类</a>
+						<ol id="commodity-style" class="commodity-style">
+						   
+						</ol>
+
+					</li>
+					<li>
+						<a href="javascript:;">首页</a>
+					</li>
+					<li>
+						<a href="javascript:;">品牌馆</a>
+					</li>
+					<li>
+						<a href="javascript:;">会员中心</a>
+					</li>
+					<li>
+						<a data-href="wei_login.html" onclick="picture.loginClick(this)">微代理</a>
+					</li>
+					<li>
+						<a href="javascript:;">财富合伙人加盟</a>
+					</li>
+				</ul>
+			</nav>
+			</div>
+			<div class="shop_url">
+				<p>
+				全部<img src="/imgs/find.png" alt="" /><a href="#">交易管理</a><img src="/imgs/find.png" alt="" /><a href="#">我的订单</a><img src="/imgs/find.png" alt="" /><a href="#">物流详情</a><img src="/imgs/find.png" alt="" /><a href="#">填写单号</a>
+				</p>
+			</div>
+			<div class="write_flie">
+				<p>请您把商品退货到下列地址，并填写物流渠道及运单单号</p>
+				<p><label>寄货地址：</label><span>北京市东城区银河SOHO</span></p>
+				<p><label>快递公司：</label><input type="text" name="" id="logistics_num" value="" /></p>
+				<p><label>快递单号：</label><input type="text" name="" id="company" value="" /></p>
+				<button class="file_submit">提交</button>
+			</div>
+			
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/sessionStorage.js"></script>
+		<script src="/js/file_seat.js"></script>
+		<script type="text/javascript">
+		
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		    
+		</script>
+	</body>
+</html>

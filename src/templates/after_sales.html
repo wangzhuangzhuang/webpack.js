@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-售后管理</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/layer.css" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<link rel="stylesheet" href="/css/user_order.css?v=47e3a2ce41" />
+		<link rel="stylesheet" href="/css/pc_classify.css?v=768a99a900" />
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+	</head>
+	<body>	
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+			<div class="user_order">
+                  <!------------------------用户全部订单------------------------- -->
+                  <div class="user_allOder">
+                      <nav>
+                        <ul>
+                        	<a href="#"><li>售后管理</li></a>
+                        </ul>
+                        <ol>
+                        	<li style="padding-left:38px;">商品信息</li>
+                        	<li style="padding-left:321px;">单价</li>
+                        	<li style="padding-left:54px;">数量</li>
+                        	<li style="padding-left:60px;">总计(元)</li>
+                        	<li style="padding-left:84px;">订单状态</li>
+                        	<li style="padding-left:61px;">操作</li>
+                        </ol>
+                      </nav>
+                  </div>
+                  <div class="user_sp_order">
+                 <!--  <div class="user_all_order">
+                 <p class="thead"><time>2016-10-10</time><span>订单号：12545986553666956</span></p>
+                  <table class="more_sporder" id="rated_list">
+                    <tbody>
+                      <tr>
+                      	<td><img src="/imgs/user_centre_03.png"/></td>
+                      	<td><h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1><span>水果味</span></td>
+                      	<td><h6>原价：<span>155.21</span></h6>￥100.50</td>
+                      	<td>×1</td>
+                      	<td rowspan="2"><h2>￥100.25</h2><p>(含运费<label>12</label>元)</p></td>
+                      	<td rowspan="2"><p>退款申请中</p><a href="#">查看详情</a></td>
+                      	<td rowspan="2"><a>填写单号</a></td>
+                      </tr>
+                      <tr>
+                      	<td><img src="/imgs/user_centre_03.png"/></td>
+                      	<td><h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1><span>水果味</span></td>
+                      	<td><h6>原价：<span>155.21</span></h6>￥100.50</td>
+                      	<td>×1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="user_all_order">-->
+               <!--   <p class="thead"><time>2016-10-10</time><span>订单号：12545986553666956</span></p>
+                  <table class="more_sporder" id="rated_list">
+                    <tbody>
+                      <tr>
+                      	<td><img src="/imgs/user_centre_03.png"/></td>
+                      	<td><h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1><span>水果味</span></td>
+                      	<td><h6>原价：<span>155.21</span></h6>￥100.50</td>
+                      	<td>×1</td>
+                      	<td><h2>￥100.25</h2><p>(含运费<label>12</label>元)</p></td>
+                      	<td><p>退款失败</p><a href="#">查看详情</a></td>
+                      	<td></td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  </div>
+                           -->        
+
+                  </div>
+                   <div class="jump_page" style="padding-left:0;width:914px;">
+					<div class='pager-list' style="margin-left:0;margin-left:70px;"></div>
+				</div>
+			<!--	<div class="geuss_like" id="user_like">
+				</div>
+				<div class="huan_like" id="user_replace">
+					<h1>猜你喜欢</h1>
+					<p><span>换一批</span><img src="/imgs/fenlei_55.png"/></p>
+				</div>
+				<section class="fiery" id="userReplace_like">
+					<div class="classify-content">
+						<a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="/images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       
+                        </div>
+					</section>-->
+			</div>
+			</div>
+			</div>
+		
+		<script src="/js/picture.js"></script>
+		<script src="/js/pc_classify.js?v=fdf69ce397"></script>
+		<script src="/js/layer.js"></script>
+		<script src="/js/after_sales.js"></script>
+		<script type="text/javascript">
+               var pages_num=null,page_size=1,total_count=$(".user_all_order").length;
+	    	   pages_num=Math.ceil(total_count/page_size);
+			
+	    		$().ready(function () {  
+				    $('div.pager-list').pageList({  
+				        prevText: '<img src="/imgs/fenlei_47.png"/>上一页',  
+				        nextText: '下一页<img src="/imgs/fenlei_50.png"/>',  
+				        recordText: '共{0}页',  
+				        totalCount: total_count,  
+				        goInputType: 'text',  
+				        showGoLink: true,  
+				        showPageRange: 1,  
+				        pageSize:page_size,
+				        renderPerCall: true,  
+				        clickCallback: function (currentPage) {  
+				            xuan(currentPage-1,this.pageSize);
+				        }  
+				    }); 
+				    
+               }); 
+               
+               function xuan(i,k){
+		//console.log(data);
+		//console.log(i);
+		var min=i*k;
+		    max=(i+1)*k;
+	       $(".user_all_order").each(function(j,val){
+ 
+	       	   if(j>=min&&j<max){
+                         
+	       	   }
+
+	       })
+
+            }
+		</script>
+	</body>
+</html>

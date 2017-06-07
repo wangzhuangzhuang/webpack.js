@@ -1,0 +1,230 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc">
+		<link rel="stylesheet" href="/css/shop_car.css?v=fcb6a3399d">
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/layer.css">
+		<link rel="stylesheet" href="/css/submit_order.css?v=452efc4944">
+		<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script type="text/javascript" src="/js/layer.js"></script>
+		<script type="text/javascript" src="/js/crypto-min.js?v=f484c60921"></script>
+		<script type="text/javascript" src="/js/hmac-min.js?v=9f9f131b7e"></script>
+		<script type="text/javascript" src="/js/sha1-min.js?v=6058ff06e8"></script>
+		<script type="text/javascript" src="/js/base64.js?v=1562ca0bb9"></script>
+		<script type="text/javascript" src="/js/plupload.full.min.js?v=05336e689b"></script>
+		<script type="text/javascript" src="/js/orderHTML.js?v=974a4285fa"></script>
+		<style>
+			#city_4 select {
+				border: 1px #993300 solid;
+				background: #FFFFFF;
+			}
+			.NoBox{
+				width:300px;
+				margin: 0 auto;
+				margin-top: 50px;
+				display: none;
+			}
+			.NoBoxText{
+				height: 110px;
+				width: 100%;
+				line-height: 110px;
+				text-align: right;
+				background: url(/images/NOIMg.png) no-repeat left center;
+			}
+			.NoBoxBtn{
+				text-align: center;
+				margin-top: 25px;
+			}
+			.NoBoxBtn a{
+				width:110px;
+				height: 35px;
+				text-align: center;
+				line-height: 35px;
+				display: inline-block;
+				margin: 0 5px;
+			}
+			.NoBoxBtn a:nth-of-type(1){
+				background: #FF9600;
+				color: #FFFFFF;
+			}
+			.NoBoxBtn a:nth-of-type(2){
+				position: relative;
+				top: 2px;
+				color: #FF9600;
+				line-height: 32px;
+				border: 3px solid #FF9600;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="box_bg" >
+				 <%- include('_partial/headerTop') %>
+				<div class="searchBox">
+					<div class="icon">
+						<a href="show.html"><img src="/images/icon.png"></a>
+					</div>
+					<div class="search-Text" style="margin-left:510px;width:345px;">
+						<img src="/imgs/shop_line.png" alt="">
+					</div>
+				</div>
+			</div>
+			<!--
+            	--------------地址以及身份证---------
+            -->
+			<div class="car_box" style="display: none;">
+				<div class="add_address" style="display: none;" id="addsite">
+					<h1><span>添加收货地址</span><span class="sitePrompt" style="display: inline;color:red;font-size: 14px;padding-left: 45px;display: none;">请添加收货地址</span></h1>
+					<p><label>收货人：</label><input type="text" class="harvest_person"></p>
+					<p class="city_4">
+						<label>所在地区：</label>
+						<span><select id="s_province" name="s_province"></select><img src="/imgs/up_la.png" alt=""></span>
+						<span><select id="s_city" name="s_city"></select><img src="/imgs/up_la.png" alt=""></span>&nbsp;&nbsp;
+						<span><select id="s_county" name="s_county"></select><img src="/imgs/up_la.png" alt=""></span>
+					</p>
+					<p class="detail_address"><label>详细地址：</label><textarea name="" rows="" cols="" placeholder="请填写详细地址" class="particular"></textarea></p>
+					<p class="user_phone"><label>联系电话：</label><input type="text" class="harvest_phone"></p>
+					<p class="moren_address"><input type="checkbox"><span>设为默认地址</span></p>
+					<div><button class="confirm_btn wzconfirm_btn">确认添加</button></div>
+				</div>
+				<div class="recip_address" style="display: none;" id="amendSite" >
+					<h1><span>选择收货地址</span><span class="sitePrompt">请选择地址</span><a href="user_recip.html">管理收货地址</a></h1>
+					<ul id="siteList">
+						
+					</ul>
+					<h3 id="AllShow" style="display: none;"><a href="javascript:;"><span>显示全部地址</span><img src="/imgs/down_01.png" alt=""></a></h3>
+					<button id="addSiteBtn" type="button">添加收货地址</button>
+				</div>
+				<div class="recip_address" id="recip_idcard" style="display: none;">
+					<h1><span>选择身份证号码</span><span class="userPrompt">请选择身份证</span><a href="add_idCard.html">管理身份证</a></h1>
+					<ul id="cardList">
+						
+					</ul>
+					<h3 id="AllShow2" style="display: none;"><span>显示全部身份证</span><img src="/imgs/down_01.png" alt=""></h3>
+					<button type="button" id="add_idBtn">添加身份证号码</button>
+				</div>
+				<div class="add_address" id="add_idcard" style="display: none;">
+					<h1><span>添加身份证</span><span class="userPrompt" style="display: inline;color:red;font-size: 14px;padding-left: 45px;display: none;">请添加身份证</span></h1>
+					
+						<p><label>姓名：</label><input type="text" placeholder="请务必填写真实姓名，该姓名将用于海关清关核对" id="add_name"><span id="prompt" style="color:red;font-size:12px;display: inline-block;padding-left:10px;"></span></p>
+						<p class="user_phone"><label>身份证号码：</label><input type="text" placeholder="请务必填写真实身份证，该身份证将用于海关清关核对" id="add_number" style="width:353px;"></p>
+						<div class="upload_imgs">
+							<label style="width: 142px;">身份证图片上传：</label>
+							<div class="pload_imgsBox">
+								<div class="upload_imgs-fileLeft" id="container" style="position: relative;">
+									<div class="inputBox" id="selectfiles" style="position: relative; z-index: 1;">
+
+										<section id="sec1">
+
+										</section>
+									</div>
+									<p class="tishi">示例</p>
+									<div class="imgBox">
+										<img src="/imgs/zhen_img_01.png">
+									</div>
+									<div id="html5_1bbkulmc595l1lgttb9uri1ilj6_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 126px; height: 80px; overflow: hidden; z-index: 0;"><input id="html5_1bbkulmc595l1lgttb9uri1ilj6" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 99999;" multiple="" accept=""></div>
+								</div>
+								<section></section>
+								<div class="upload_imgs-fileRight" id="container2" style="position: relative;">
+									<div class="inputBox" id="selectfiles2" style="position: relative; z-index: 1;">
+
+										<section id="sec2">
+
+										</section>
+
+									</div>
+									<p class="tishi">示例</p>
+									<div class="imgBox">
+										<img src="/imgs/shen_img_02.png" data-required="true" data-descriptions="picture">
+									</div>
+									<div id="html5_1bbkulmc39lhtn4qqr16i7std4_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 126px; height: 80px; overflow: hidden; z-index: 0;"><input id="html5_1bbkulmc39lhtn4qqr16i7std4" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 99999;" multiple="" accept=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="tishi_word">
+							<label> 温馨提示：</label>
+							<ul>
+								<li>1、上传的身份证以示例为准清晰、可观,以免影响您的审核结果;</li>
+								<li>2、根据海关规定，购买跨境商品需要办理清关手续，请您认真填写 ，以确保您购买的商品顺利通过海关检查;</li>
+								<li>3、购买跨境商品需填写真实的姓名及身份证号码，部分商品下单时需提供收货人的身份证照片，具体请以下单时的提示为准。</li>
+							</ul>
+						</div>
+						<button class="confirm_btn" id="saveBtn" type="button">提交审核</button>
+						<div id="postfiles2"></div>
+				
+				</div>
+				<div class="have_sp">
+				<h1>确认商品信息</h1>
+					
+               
+				</div>
+				<div class="shop_addprice">
+					<div><label>税费 ：￥</label><span id="tax"></span></div>
+					<div><label>运费 ：￥</label><span id="freight_money"></span></div>
+					<div class="wzfavorable">
+						<label>使用优惠券 ：</label>
+						<div>
+							<select style="outline: none;margin-top: 2px;padding: 2px 5px;" id="privilegeBtn">
+								
+							</select>
+						</div>
+					</div>
+				<!--	<div><label>消耗洋币 ：</label><span>不可用（不可与优惠券同享）<img src="/imgs/no_total.png" alt=""></span></div>-->
+					<div><label>应付金额 ：￥</label><span id="order_total"></span></div>
+				</div>
+				<div class="shop_submit">
+					<a href="javascript:history.back(-1)" id="backShop_car">返回购物车修改</a>
+					<button type="button" id="storageBtn">提交订单</button>
+				</div>
+				
+			</div>
+			<!--
+        	------------添加地址弹出框--------------------
+        -->
+			<div class="add_dress" data-clickStyle="1">
+				<div class="add_address tianjia">
+					<h1 style="clear: both;">添加收货地址</h1>
+					<p><label>收货人：</label><input type="text" class="harvest_person"></p>
+					<p class="city_4">
+						<label>所在地区：</label>
+						<span><select id="s_province2" name="s_province2"></select><img src="/imgs/up_la.png" alt=""></span>
+						<span><select id="s_city2" name="s_city2"></select><img src="/imgs/up_la.png" alt=""></span>&nbsp;&nbsp;
+						<span><select id="s_county2" name="s_county2"></select><img src="/imgs/up_la.png" alt=""></span>
+					</p>
+					<p class="detail_address"><label>详细地址：</label><textarea name="" rows="" cols="" placeholder="请填写详细地址" class="particular"></textarea></p>
+					<p class="user_phone"><label>联系电话：</label><input type="text" class="harvest_phone"></p>
+					<p class="moren_address"><input type="checkbox"><span>设为默认地址</span></p>
+					<div><button class="cancel_btn">取消</button>
+						<button class="confirm_btn wzconfirm_btn">保存新地址</button></div>
+				</div>
+			</div>
+			<div class="add_idcard" style="display: none;" id="wzadd_add_idcard">
+				<div class="add_address add_card">
+						<div id="saveBtn"></div>
+						<div id="postfiles2"></div>
+				</div>
+			</div>
+		    <div class="NoBox">
+		    	<div class="NoBoxText">
+		    		此订单已经提交，您可以...
+		    	</div>
+		    	<div class="NoBoxBtn">
+		    		<a href="show.html">逛逛吧</a>
+		    		<a href="user_order.html">查看订单</a>
+		    	</div>
+		    </div>	
+		</div>
+
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script class="resources library" src="/js/area.js?v=b3c58309db" type="text/javascript"></script>
+		
+		<script type="text/javascript" src="/js/order.js?v=9559c82c7c"></script>
+		
+	</body>
+
+</html>

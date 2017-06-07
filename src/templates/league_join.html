@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>财富合伙人加盟</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/league_join.css?v=11a0f9c911" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="pc_replace">
+				<h1>洋窝儿城市合伙人<span>加盟政策</span></h1>
+				<ul>
+					<li><a href="#">加盟优势</a></li>
+					<li><a href="#">加盟支持</a></li>
+					<li><a href="#">加盟政策</a></li>
+					<li><a href="#">加盟条件</a></li>
+					<li><a href="#">加盟流程</a></li>
+					<li><a href="#">加盟演示</a></li>
+					<li><a href="#">申请加盟</a></li>
+				</ul>
+			</div>
+			<div class="discount">
+             <div class="share_word bdsharebuttonbox">
+             	<small>分享到：</small><a title="分享到微信" href="#" id="bds_weixin" class="bds_weixin" data-cmd="weixin"></a>
+             	<a href="#" title="分享到QQ好友" id="bds_sqq" class="bds_sqq" data-cmd="sqq"></a>
+             	<a href="#"  title="分享到QQ空间" id="bds_qzone" class="bds_qzone" data-cmd="qzone"></a>
+             	<a href="#" title="分享到新浪微博" id="bds_tsina" class="bds_tsina" data-cmd="tsina"></a>
+             </div>
+             <div class="comment">
+             	<h2>发表评论</h2>
+             	<textarea name="" rows="" cols="" maxlength="400"></textarea>
+             	<button>发表</button>
+             	<h3>评论（<span>30</span>）</h3>
+             	<ul>
+             		<li>
+             			<dl>
+	             			<dt><img src="/imgscat.jpg"/></dt>
+	             			<dd>
+	             				<h4>YOUNGWORLD </h4>
+	             				<time>2016-10-20 11：20 </time>
+	             			</dd>
+             		    </dl>
+             		    <p>如果您需要咨询洋窝儿跨境生活智能体验馆的加盟问题可以在这里发布。</p>
+             		</li>
+             		<li>
+             			<dl>
+	             			<dt><img src="/imgscat.jpg"/></dt>
+	             			<dd>
+	             				<h4>YOUNGWORLD </h4>
+	             			    <time>2016-10-20 11：20 </time>
+	             			</dd>
+             		    </dl>
+             		    <p>如果您需要咨询洋窝儿跨境生活智能体验馆的加盟问题可以在这里发布。</p>
+             		</li>
+             	</ul>
+             </div>
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script type="text/javascript">
+			picture.init();
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		 //分享到qq好友 qq空间 新浪微博 微信等；
+		 window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"内容","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["tsina","tqq","qzone","weixin","sqq"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","qzone","weixin","sqq"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+		</script>
+		
+		<!--<div class="tool_title"><b>分享到：&nbsp;</b></div>
+    <div class='share'>
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a></div>-->
+
+	</body>
+</html>

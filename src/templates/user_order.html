@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-个人中心</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<link rel="stylesheet" href="/css/user_order.css?v=47e3a2ce41" />
+		<link rel="stylesheet" href="/css/layer.css" />
+		<link rel="stylesheet" href="/css/pc_classify.css?v=768a99a900" />
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/layer.js"></script>
+		<script src="/js/user_login.js"></script>
+		<script src="/js/pc_classify.js?v=fdf69ce397"></script>
+	</head>
+	<body>	
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+			<div class="user_order">
+               
+<!------------------------用户全部订单------------------------- -->
+                  <div class="user_allOder">
+                      <nav>
+                        <ul class="li_list">
+                        	<li data-type="0" class="border_list">全部订单<span></span></li>
+                        	<li data-type="1">待付款<span></span></li>
+                        	<li data-type="2">待发货<span></span></li>
+                        	<li data-type="3">待收货<span></span></li>
+                        	<li data-type="4">待评价<span></span></li>
+                        </ul>
+                        <ol class="nosp_list">
+                        	<li style="padding-left:38px;">商品信息</li>
+                        	<li style="padding-left:321px;">单价</li>
+                        	<li style="padding-left:54px;">数量</li>
+                        	<li style="padding-left:60px;">总计(元)</li>
+                        	<li style="padding-left:84px;">订单状态</li>
+                        	<li style="padding-left:85px;">操作</li>
+                        </ol>
+                      </nav>
+                  </div>
+                  <div class="user_sp_order">
+                  	
+               
+                  </div>
+                <div class="jump_page" style="padding-left:0;width:914px;">
+					<div class='pager-list' style="margin-left:0;margin-left:70px;"></div>
+				</div>
+				
+			  
+			<div class="away_order">
+				<div class="bomb_box">
+					<p><img src="/imgs/bomb_01.png"/><span>您确定要取消该订单吗？取消订单后，不能恢复</span></p>
+					<div>
+						<label>请选择您要取消订单的理由：</label>
+						<div>
+							<select class="choose_select">
+								<option value="">请选择退货原因</option>
+								<option value="">我不想买了</option>
+								<option value="">信息填写错误，重新拍</option>
+								<option value="">卖家缺货</option>
+								<option value="">同城见面交易</option>
+								<option value="">拍错了</option>
+								<option value="">其他问题</option>
+							</select>
+							<img src="/imgs/up_la.png" alt="" />
+							</div>
+					</div>
+					<h2 class="choose_infor"><img src="/imgs/bomb_02.png"/><span>请选择一种理由</span></h2>
+					<h3><a class="confirm_infor">确定</a><a class="cancel_infor">取消</a></h3>
+				</div>
+			</div>
+			</div>
+			</div>
+			</div>
+		
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/user_order.js?v=a33041d346"></script>
+		<script type="text/javascript">
+            $('.pager-list').pageList({
+					
+						prevText: '<img src="/imgs/fenlei_47.png"/>上一页',
+						nextText: '下一页<img src="/imgs/fenlei_50.png"/>',
+						recordText: '共{0}页',
+						totalCount: 1,
+						goInputType: 'text',
+						showGoLink: true,
+						showPageRange: 1,
+						pageSize: 1,
+						renderPerCall: true,
+						clickCallback: function(currentPage) {
+							
+						  	return currentPage;
+						}
+			  }); 
+		</script>
+	</body>
+</html>

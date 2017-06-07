@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.apply {
+  width: 1000px;
+  margin: 0 auto;
+}
+.apply img {
+  width: 100%;
+  height: auto;
+}
+.user_information {
+  width: 1000px;
+  margin: 0 auto;
+}
+.user_information li {
+  float: left;
+  width: 312px;
+  height: 45px;
+  border: 1px solid #ccc;
+  line-height: 45px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.user_information li div {
+  width: 200px;
+  height: 43px;
+  float: right;
+  line-height: 43px;
+}
+.user_information li div input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+}
+.user_information li span {
+  float: left;
+  font-size: 12px;
+  color: #010101;
+  padding-left: 9px;
+}
+.user_information li span small {
+  color: red;
+}
+.user_information li p {
+  float: right;
+}
+.user_information li p label {
+  display: inline-block;
+  padding: 0 15px 0 9px;
+}
+.user_information li:nth-child(3n-1) {
+  margin: 0 28px 20px 28px;
+}
+.yijian {
+  width: 980px;
+  height: 138px;
+  resize: none;
+  padding: 19px 9px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  color: #010101;
+}
+::-moz-placeholder {
+  color: #010101;
+}
+.sub_btn {
+  width: 1000px;
+  height: 48px;
+  background: #3f231e;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}

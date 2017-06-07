@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员特权</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/discount_vip.css?v=1cc0705e05" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="pc_replace">
+				<div class="psd_find">
+					<a href="">会员特权</a><span><img src="imgs/find.png"/>专享折扣特权</span>
+				</div>
+				<div class="discount">
+					<div>
+					<h1>【限时特价】不参加折扣优惠</h1>
+					</div>
+					<table class="discount_table">
+						<tr>
+						<td>等级</td>
+						<td>累计消费金额</td>
+						<td>专享折扣</td>
+					</tr>
+					<tr>
+						<td>V1</td>
+						<td>100</td>
+						<td>无折扣</td>
+					</tr>
+					<tr>
+						<td>V2</td>
+						<td>500</td>
+						<td>无折扣</td>
+					</tr>
+					<tr>
+						<td>V3</td>
+						<td>1000</td>
+						<td>9.9折</td>
+					</tr>
+					<tr>
+						<td>V4</td>
+						<td>2000</td>
+						<td>9.8折</td>
+					</tr>
+					<tr>
+						<td>V5</td>
+						<td>3000</td>
+						<td>9.7折</td>
+					</tr>
+					<tr>
+						<td>V6</td>
+						<td>5000</td>
+						<td>9.6折</td>
+					</tr>
+					<tr>
+						<td>V7</td>
+						<td>10000</td>
+						<td>9.5折</td>
+					</tr>
+					<tr>
+						<td>V8</td>
+						<td>50000</td>
+						<td>9.4折</td>
+					</tr>
+					<tr>
+						<td>V9</td>
+						<td>100000</td>
+						<td>9折</td>
+					</tr>
+					<tr>
+						<td>V10</td>
+						<td>500000</td>
+						<td>8.5折</td>
+					</tr>
+					<tr>
+						<td>V11</td>
+						<td>1000000</td>
+						<td>8折</td>
+					</tr>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script type="text/javascript">
+			picture.init();
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		</script>
+	</body>
+</html>

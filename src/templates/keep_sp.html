@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/keep_sp.css?v=b71c6e4815" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+		<title>我的收藏</title>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+	</head>
+	<body>
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+		<div class="keep_wrap">
+			<div class="keep_sp">
+				<ul>
+					<a href="javascript:;" class="shou_sp"><li class="border">收藏商品</li></a>
+					<a href="javascript:;" class="shou_pin"><li>收藏品牌</li></a>
+			</ul>
+			<section class="fiery" id="userReplace_like">
+					<div class="classify-content">
+						<!--<a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+	                        <img src="/imgsslice.png" alt="" class="slice_sp"/>
+	                        <div class="popup">
+	                        	<p>确定删除？</p>
+	                        	<button>确定</button><button>取消</button>
+	                        </div>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+	                        <img src="/imgsslice.png" alt="" class="slice_sp"/>
+	                        <div class="popup">
+	                        	<p>确定删除？</p>
+	                        	<button>确定</button><button>取消</button>
+	                        </div>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+	                        <img src="/imgsslice.png" alt="" class="slice_sp"/>
+	                        <div class="popup">
+	                        	<p>确定删除？</p>
+	                        	<button>确定</button><button>取消</button>
+	                        </div>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+	                        <img src="/imgsslice.png" alt="" class="slice_sp"/>
+	                        <div class="popup">
+	                        	<p>确定删除？</p>
+	                        	<button>确定</button><button>取消</button>
+	                        </div>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+	                        <img src="/imgsslice.png" alt="" class="slice_sp"/>
+	                        <div class="popup">
+	                        	<p>确定删除？</p>
+	                        	<button>确定</button><button>取消</button>
+	                        </div>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+	                        <img src="/imgsslice.png" alt="" class="slice_sp"/>
+	                        <div class="popup">
+	                        	<p>确定删除？</p>
+	                        	<button>确定</button><button>取消</button>
+	                        </div>
+                        </a>  -->                    
+                        </div>
+			
+			<!--
+            	收藏品牌
+            -->
+            <div class="keep_brand" style="display: none;">
+            	<!--<a href="#">
+            		<dl>
+            			<dt><img src="/imgsbrand_01.png"/></dt>
+            			<dd><span>商品数 4778</span><num>收藏数 2886</num>
+            				<button>取消收藏</button>
+            			</dd>
+            		</dl>
+            	</a>
+            	<a href="#">
+            		<dl>
+            			<dt><img src="/imgsbrand_02.png"/></dt>
+            			<dd><span>商品数 4778</span><num>收藏数 2886</num>
+            				<button>取消收藏</button>
+            			</dd>
+            		</dl>
+            	</a>
+            	<a href="#">
+            		<dl>
+            			<dt><img src="/imgsbrand_03.png"/></dt>
+            			<dd><span>商品数 4778</span><num>收藏数 2886</num>
+            				<button>取消收藏</button>
+            			</dd>
+            		</dl>
+            	</a>
+            	<a href="#">
+            		<dl>
+            			<dt><img src="/imgsbrand_04.png"/></dt>
+            			<dd><span>商品数 4778</span><num>收藏数 2886</num>
+            				<button>取消收藏</button>
+            			</dd>
+            		</dl>
+            	</a>-->
+            </div>
+            
+            <div class="no_sp">
+            	您还没有收藏的商品哦~ <a href="#">去逛逛吧</a>
+            </div>
+		</div>
+			</section>
+			<div class="jump_page">
+					<div class='pager-list'></div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		<script src="/js/picture.js"></script>
+		<script src="/js/pc_classify.js?v=fdf69ce397"></script>
+		<script src="/js/keep_sp.js?v=7d34241b58"></script>
+		<script>
+			$('.pager-list').pageList({
+					
+						prevText: '<img src="/imgsfenlei_47.png"/>上一页',
+						nextText: '下一页<img src="/imgsfenlei_50.png"/>',
+						recordText: '共{0}页',
+						totalCount: 0,
+						goInputType: 'text',
+						showGoLink: true,
+						showPageRange: 1,
+						pageSize: 1,
+						renderPerCall: true,
+						clickCallback: function(currentPage) {
+							//$(".more_num").text(currentPage);
+						  	//pc_classify.page = currentPage-1; 
+						  	return currentPage;
+						}
+			  });
+		</script>
+		
+	</body>
+</html>

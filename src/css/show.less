@@ -1,0 +1,556 @@
+.imgBox {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 360px;
+    ul {
+        width: 1920px;
+        height: 360px;
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+        top: 0;
+        li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            a {
+                display: block;
+                height: 100%;
+            }
+            img {
+                display: block;
+                width: 1920px;
+                height: 360px;
+            }
+            
+        }
+        li:first-child {
+            z-index: 1;
+        }
+    }
+    ol {
+        position: absolute;
+        z-index: 9999;
+        left: 50%;
+        bottom: 30px;
+        width: 1200px;
+        margin-left: -600px;
+        div {
+            text-align: center;
+            overflow: hidden;
+        }
+        li {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            border:1px solid #FFFFFF;
+            border-radius: 100%;
+            margin-left: 15px;
+            background: #dab4a5;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        li.current {
+            background: #faf6f6;
+        }
+    }
+}
+
+/*
+  内容
+ * */
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 35px;
+    header {
+        .leftBox {
+            width: 273px;
+            height: 44px;
+            background: url("../images/title_01.png") no-repeat;
+            margin: 0;
+        }
+    }
+    .classifyBox .rightNav {
+        height: 30px;
+        padding: 0 10px;
+        a {
+            color: #999999;
+            display: inline-block;
+            
+            text-align: center;
+        }
+        a:last-child {
+            background: url("../images/right.png") no-repeat right center;
+            padding-right: 25px;
+        }
+    }
+}
+.classifyBox {
+    ////////////商品盒子
+    margin-top: 35px;
+    .leftRight-box {
+        /////////////////商品标题
+        position: relative;
+        height: 44px;
+        margin-bottom: 15px;
+    }
+    .rightNav {
+        margin: 0;
+        padding: 0;
+        float: inherit;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -15px;
+        overflow: hidden;
+        a {
+            padding: 0 10px;
+            display: block;
+            float: left;
+            line-height: 30px;
+            height: 100%;
+            color: #000000;
+            font-size: 14px;
+            position:relative; 
+            &:after{
+                content: "";
+                position: absolute;
+                width: 1px;
+                top:8px;
+                bottom: 8px;
+                right: 0;
+                background: #CCCCCC;
+            }
+        }
+        a:last-child{
+            &:after{display: none;}
+        }
+    }
+}
+.hot {
+    /////////////////r热门商品
+    .aRightBorder .rightNav {
+        float: inherit;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: #3f231e;
+        a {
+            color: #FFFFFF;
+        }
+        a:last-child {
+            padding-right: 10px;
+            background: none;
+        }
+    }
+}
+.classify-content {
+    /////商品内容
+    overflow: hidden;
+    .leftRight-box {
+        height: auto;
+        overflow: hidden;
+    }
+    .leftBox2 {
+        width: 994px;
+        height: auto;
+        margin: 0;
+        .leftBox-top {
+            overflow: hidden;
+            a{
+                padding: 0;
+            }
+            li {
+                width: 490px;
+                float: left;
+                img{
+                    display: block;
+                }
+            }
+            li:last-child {
+                float: right;
+            }
+        }
+        .leftBox-bottom {
+            overflow: hidden;
+            height: 311px;
+            position: relative;
+            //margin-top: 15px;
+            .dlBox {
+                position: absolute;
+                overflow: hidden;
+            }
+            a{
+                color: #000000;
+                padding:0;
+            }
+            dl {
+                float: left;
+                width: 248.5px;
+                height: 311px;
+            }
+            dt {
+                height: 215px;
+                width: 80%;
+                margin: 0 auto;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            dd {
+                width:80%;
+                margin: 0 auto;
+                h2 {
+                    font-size: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-weight: normal;
+                }
+                
+                h5,p {
+                    text-align: center;
+                }
+                h5 {
+                    padding: 5px 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-weight: normal;
+                }
+                p {
+                    font-size: 14px;
+                    color: #ff9900;
+                    span {
+                        font-size: 12px;
+                        color: #666666;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+        .prevBtn,
+        .nextBtn {
+            position: absolute;
+            z-index: 1000;
+            width: 26px;
+            height: 48px;
+            border: none;
+            outline: none;
+            background: none;
+            top: 50%;
+            margin-top:-24px;
+        }
+        .nextBtn {
+            right: 0;
+            background: url(../images/rightBtn.png) no-repeat center center;
+        }
+        .prevBtn{
+            background: url(../images/leftBtn.png) no-repeat center center;
+        }
+    }
+    .rightBox2{
+        width: 180px;
+        position: inherit;
+        float: right;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        a{
+            color: #000000;
+        }
+        dl {
+            height: 153.75px;
+            dt{
+                width: 100%;
+                height: 98px;
+                //border: 1px solid #ccc;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dd {
+                text-align: center;
+                padding-top: 10px;
+                font-size:14px;
+            }
+        }
+    }
+}
+.Boutique {
+    margin-top:0px;
+    ///精品
+    header .leftBox {
+        background-image: url("../images/title_02.png");
+    }
+    .classify-content {
+        overflow: hidden;
+        a {
+            float: left;
+            margin-right: 21.33px;
+            padding:0;
+        }
+        a:last-child {
+            margin-right: 0;
+        }
+        img {
+            width: 284px;
+            height: 275px;
+            display: block;
+        }
+    }
+}
+.infant {
+    ///母婴
+    header .leftBox {
+        background-image: url("../images/title_03.png");
+    }
+}
+.classify-content-left {
+    float: left;
+    width: 485px;
+    height: 494px;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+.classify-content-centert {
+    float: left;
+    height: 494px;
+    width: 238px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #CCCCCC;
+    img {
+        display: block;
+        width: 238px;
+        height: 238px;
+    }
+    ol {
+        width: 100%;
+        height: 156px;
+        padding: 25px;
+        li {
+            text-align: center;
+            width: 50%;
+            height: 26.5px;
+            line-height: 26.5px;
+            float: left;
+            a {
+                color: #000;
+                font-size:12px;
+            }
+        }
+    }
+}
+.classify-content-centert,
+.classify-content-right{
+    h4 {
+        font-size: 16px;
+        color: #000000;
+        padding: 5px 15px;
+        padding-top:20px;
+    }
+    h5 {
+        font-size: 12px;
+        color: #666666;
+        font-weight: normal;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+}
+.classify-content-right {
+    float: left;
+    width: 477px;
+    height: 494px;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    li {
+        float: left;
+        width: 237.5px;
+        height: 247px;
+        border-left: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+        position: relative;
+        img {
+            position: absolute;
+            display: block;
+            right: 0;
+            bottom: 1px;
+            width: 147px;
+            height: 147px;
+        }
+    }
+}
+.makeUp {
+    ////美妆护理
+    header .leftBox {
+        background-image: url("../images/title_04.png");
+    }
+}
+.nutrition {
+    ///营养
+    header .leftBox {
+        background-image: url("../images/title_05.png");
+    }
+}
+.cate{
+    /////美食
+     header .leftBox {
+        background-image: url("../images/title_06.png");
+    }
+}
+.family{
+    ////家具
+     header .leftBox {
+        background-image: url("../images/title_07.png");
+    }
+}
+.fiery{/////火热
+ header .leftBox {
+        background-image: url("../images/title_08.png");
+    }
+     .classify-content{
+         overflow: hidden;
+         dl{
+             dt{
+                 width: 100%;
+                 img{
+                     width: 230px;
+                     height: 230px;
+                     margin: 0 auto;
+                 }
+             }
+         }
+     }
+}
+
+
+/*
+  内容
+ * */
+/*
+ 楼层*/
+.storey {
+    position: fixed;
+    top: 0;
+    width: 45px;
+    height: auto;
+    right: 120px;
+    z-index: 999999;
+    right: 50%;
+    margin-right:620px;
+    display: none;
+    article {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #663333;
+        border-bottom: none;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    };
+    span {
+        display: block;
+        width: 45px;
+        height: 45px;
+        color: #663333;
+        text-align: center;
+        font-size: 14px;
+        padding: 2px;
+        display: none;
+    }
+    article.s {
+        border: 1px solid #663333;
+    }
+    article:last-child {
+        border: 1px solid #663333;
+        margin-top: 13px;
+    }
+   article.Aclick{
+       span{
+           display: block;
+       }
+       img{
+           display: none;
+       }
+   }
+   article.Ahover{
+       span{
+           display: block;
+       }
+       img{
+           display: none;
+       }
+   }
+}
+
+/*底部*/
+.footer{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+   .footer-content{
+       width: 1200px;
+       margin: 0 auto;
+       height: 100%;
+       position: relative;
+   }
+   .close-close{
+       position: absolute;
+       width: 27px;
+       height: 27px;
+       background: url("../images/close.png") no-repeat ;
+       background-size: 100% 100%;
+       top: 50%;
+       margin-top: -13.5px;
+       right: 75px;
+   };
+   .footerImg{
+    position: absolute;
+    width: 975px;
+    height: 117px;
+    margin-top: -58.5px;
+    left: 65px;
+    top: 50%;
+    }
+}
+//--------------------------首页底部----------------------
+.wk_footer_side{
+    width:100%;
+    min-width: 1080px;
+    padding:26px 0;
+    background:#0E0E0E;
+    -webkit-opacity: 1;
+    .wk_footer{
+        width:1160px;
+        margin:0 auto;
+        color:#b6b3b3;
+        line-height: 26px;
+        background: url("http://www.cnkyhh.com/template/week_jiaohu/images//footer_logo.png") no-repeat right center;
+        font-size:13px;
+        a{
+            color:#b6b3b3;
+            margin:0 6px;
+            
+        }
+    }
+}
+

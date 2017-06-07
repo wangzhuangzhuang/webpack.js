@@ -1,0 +1,57 @@
+.feed {
+  width: 100%;
+  height: 590px;
+  background: #f3f3f3;
+}
+.feed_back {
+  width: 823px;
+  height: 472px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.feed_back h1 {
+  font-size: 14px;
+  color: #747474;
+  font-weight: normal;
+  width: 784px;
+  height: 90px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ebebeb;
+  padding-top: 10px;
+}
+.feed_back h1 p {
+  text-align: center;
+  padding-top: 10px;
+}
+.feed_back div {
+  position: relative;
+  padding-top: 31px;
+}
+.feed_back div textarea {
+  width: 715px;
+  height: 242px;
+  margin: 0 auto;
+  resize: none;
+  display: block;
+  padding: 16px 5px 30px 23px;
+  outline: none;
+  color: #000;
+}
+.feed_back div p {
+  position: absolute;
+  right: 75px;
+  bottom: 15px;
+  color: #747474;
+  font-size: 14px;
+}
+.feed_back button {
+  width: 120px;
+  height: 37px;
+  background: #3f231e;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  margin: 30px 0 0 52px;
+}

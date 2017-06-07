@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-帮助中心</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="user_centre"><!--1200 -->
+                <div class="user_centre_list" id="help_center"><!--196 738 -->
+                     <ul>
+                     	<li>购物指南<img src="/imgsup_la.png" alt="" />
+                     		<ol>
+                     			<li>购物流程</li>
+                     			<li>通关税费</li>
+                     			<li>支付方式</li>
+                     			<li>帮助中心</li>
+                     		</ol>
+                     		
+                     	</li>
+                     	<li>售后服务<img src="/imgsup_la.png" alt="" />
+                     	    <ol>
+                     			<li>退货政策</li>
+                     			<li>退货流程</li>
+                     			<li>退款说明</li>
+                     			<li>联系我们</li>
+                     		</ol>
+                     		
+                     	</li>
+                     	<li>物流配送<img src="/imgsup_la.png" alt="" />
+                     	    <ol>
+                     			<li>配送方式</li>
+                     			<li>配送范围与时间</li>
+                     			<li>验货签收</li>
+                     		</ol>
+                     		
+                     	</li>
+                     	<li>关于我们<img src="/imgsup_la.png" alt="" />
+                     	    <ol>
+                     			<li>网站介绍</li>
+                     			<li>版权政策</li>
+                     			<li>关于我们</li>
+                     		</ol>
+                     		
+                     	</li>
+                     </ul>
+                </div>
+                
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script type="text/javascript">
+		 picture.init();
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		    
+		</script>
+	</body>
+</html>

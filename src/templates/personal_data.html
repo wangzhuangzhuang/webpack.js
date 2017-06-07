@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/user_centre.css?v=9515e5f968" />
+        <link rel="stylesheet" href="/css/layer.css">
+		<link rel="stylesheet" href="/css/my_purse.css?v=3a5df153cb" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/user_login.js"></script>
+		<script src="/js/layer.js"></script>
+		<script type="text/javascript" src="/js/crypto-min.js?v=f484c60921"></script>
+		<script type="text/javascript" src="/js/hmac-min.js?v=9f9f131b7e"></script>
+		<script type="text/javascript" src="/js/sha1-min.js?v=6058ff06e8"></script>
+		<script type="text/javascript" src="/js/base64.js?v=1562ca0bb9"></script>
+		<script type="text/javascript" src="/js/lrz.bundle.js"></script>
+		<script type="text/javascript" src="/js/birthday.js?v=f698dd5c56"></script>
+		<script type="text/javascript" src="/js/jquery.Jcrop.js?v=6eadf9d352"></script>
+		<title>个人资料</title>
+		<style>
+			.user_detail {
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<%- include('_partial/headerHTML') %>
+		<%- include('_partial/tabHTML') %>
+		<div class="my_purse">
+			<div class="purse">
+				<ul>
+					<li class="basic_data">基本资料</li>
+					<li class="user_headimg">头像照片</li>
+				</ul>
+				<div class="user_preser" style="position: initial;">
+					<div class="user_basic" id="user_basic">
+						<p><label>昵称：</label><input type="text" id="user_nickname" /><small>最多显示20位字符</small></p>
+						<p><label>性别：</label><input type="radio" name="sex" id="sex_boy" value="1" /><label for="sex_boy">男</label><input type="radio" name="sex" id="sex_lady" value="0" /><label for="sex_lady">女</label></p>
+						<p><label>用户ID：</label><span id="user_phone"></span></p>
+						<div class="up_la">
+							<label>出生日期：</label>
+							<div>
+								<select id="select_year2" rel="2015"></select><span>年</span><img src="/imgs/up_la.png" alt="" /></div>
+							<div>
+								<select id="select_month2" rel="4"></select><span>月</span><img src="/imgs/up_la.png" alt="" /></div>
+							<div>
+								<select id="select_day2" rel="3"></select><span>日</span><img src="/imgs/up_la.png" alt="" /></div>
+						</div>
+						<div class="signature">
+							<label>个人签名：</label>
+							<div class="shop_word">
+								<textarea name="" rows="" cols="" maxlength="50" id="user_autograph"></textarea>
+								<p>
+									<num class="word_num">0</num>/<span class="add_num">50</span></p>
+							</div>
+						</div>
+
+					</div>
+					<button class="preser_btn">保存</button>
+				</div>
+				<!--
+                 	上传头像图片
+                 -->
+				<div class="user_preser">
+                    <div class="file">上传头像照片
+                    	<input type="file" id="img_change"></div>
+					<button class="update_imgbtn" style="display: none;">保存</button>
+				</div>
+			</div>
+
+		</div>
+		</div>
+		</div>
+		</div>
+
+	
+		<script type="text/javascript" src="/js/picture.js"></script>
+		
+		<script type="text/javascript" src="/js/personal_data.js?v=3f2d7ce264"></script>
+
+		<script>
+			$("#user_autograph").on("input", function() {
+				//var add_num=$(".add_num").text();
+				var word_len = $(this).val().length;
+				$(".word_num").html(word_len);
+			})
+
+			$(function() {
+				$.ms_DatePicker({
+					YearSelector: "#select_year2",
+					MonthSelector: "#select_month2",
+					DaySelector: "#select_day2"
+				});
+			});
+		</script>
+	</body>
+
+</html>

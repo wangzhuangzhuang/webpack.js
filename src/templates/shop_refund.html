@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>洋窝儿-退款详情</title>
+		<link rel="stylesheet" href="/css/reset.css?v=376ee667cc" />
+		<link rel="stylesheet" href="/css/commonality.css?v=17611828b6">
+		<link rel="stylesheet" href="/css/shopping_detail.css?v=97e2625598" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box_bg">
+			 <%- include('_partial/headerHTML') %>
+			</div>
+			<div class="shop_url">
+				<p>
+				全部<img src="/imgsfind.png" alt="" /><a href="#">交易管理</a><img src="/imgsfind.png" alt="" /><a href="#">我的订单</a><img src="/imgsfind.png" alt="" /><a href="#">退款详情</a>
+				</p>
+			</div>
+			<div class="shop_detail">
+				<div class="shop_anarchy" id="shop_refund">
+					<div>
+					<span></span><p></p><span></span><p></p><span></span>
+					<ul>
+						<li>申请退款中</li>
+						<li>处理退款中</li>
+						<li>退款完成</li>
+					</ul>
+					</div>
+				</div>
+				<div class="order_inform" style="height:255px;">
+					<div class="shop_inform" id="refund_inform">
+						<h1>退款申请</h1>
+						<p>退款时间：<span>1-3个工作日返还您的账户上</span></p>
+						<p><label>退款方式：</label><span>如为信用卡、储蓄卡支付仅支持原路返回，退货成功后，贷款会自动退I还给您支付所使用的银行卡</span></p>
+						
+						<p>订单编号：<span class="shop_order"></span></p>
+						<p>下单时间：<span class="order_time"></span></p>
+					</div>
+					<div class="shop_oblig" id="refund_explain">
+						<p>当前状态：<span class="status_sp">申请退款中</span></p>
+						<div class="refound_sp">
+							<label>退货说明：</label>
+							<p>
+							<select>
+								<option value="">请选择退货原因</option>
+								<option value="">我不想买了</option>
+								<option value="">信息填写错误，重新拍</option>
+								<option value="">卖家缺货</option>
+								<option value="">同城见面交易</option>
+								<option value="">拍错了</option>
+								<option value="">其他问题</option>
+							</select>
+							<img src="/imgsup_la.png" alt="" />
+							</p>
+							<div class="choose_over">请选择退货原因</div>
+							</div>
+							<!--<div class="shop_explain"><label>退款说明：</label>
+							<textarea name="" rows="" cols="" maxlength="200"></textarea>
+							<div><span>1</span>/<num>200</num></div>
+						     </div>-->
+						     <button style="margin-top:40px" class="submit_over">提交申请</button>
+						</div>	
+					</div>
+				<div class="in_bond">
+				<!--<div class="shop_bay">由<span>深圳***保税仓</span>发货</div>
+				<table>
+					<tr>
+						<td>商品信息</td>
+						<td>商品规格</td>
+						<td>单价(元)</td>
+						<td>数量</td>
+						<td>总计(元)</td>
+					</tr>
+					<tr>
+						<td>
+							<dl>
+								<dt><img src="/imgsuser_centre_03.png"/></dt>
+								<dd>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</dd>
+						   </dl>
+						</td>
+						<td>水果味</td>
+						<td>￥100.5</td>
+						<td>×1</td>
+						<td>￥100.5</td>
+					</tr>
+					<tr>
+						<td>
+							<dl>
+								<dt><img src="/imgsuser_centre_03.png"/></dt>
+								<dd>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</dd>
+						   </dl>
+						</td>
+						<td>水果味</td>
+						<td>￥100.5</td>
+						<td>×1</td>
+						<td>￥100.5</td>
+					</tr>
+				</table>
+				<div class="shop_total">
+					<p><label>税费：</label><span>￥25</span></p>
+					<p><label>使用优惠券：</label><span>￥10</span></p>
+					<!--<p><label>消耗洋币：</label><span>不可用(不可与优惠券同享)</span><img src="/imgsno_total.png"/></p>
+					<p><label>配送方式：</label><span>默认EMS包邮</span></p>
+					<p><label>应付金额：</label><span>￥280.8</span></p>
+				</div>-->
+				</div>
+				<!--<div class="geuss_like" id="user_like">
+				</div>-->
+				<!--<div class="huan_like" id="user_replace">
+					<h1>猜你喜欢</h1>
+					<p><span>换一批</span><img src="/imgsfenlei_55.png"/></p>
+				</div>-->
+				<!--<section class="fiery" id="userReplace_like">
+					<div class="classify-content">
+						<a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                       <a href="#" class='spStyle'>
+	                        <dl>
+	                        	<dt>
+	                        		<img src="images/dom15.png">
+	                        	</dt>
+	                        	<dd>
+	                        		<h1>2016海宁冬季长袖时尚短款狐狸毛皮草短外套女显瘦毛领新款女装</h1>
+	                        		<p class="original">￥123<span>￥155</span></p>
+	                        	</dd>
+	                        </dl>
+                        </a>
+                        </div>
+					</section>-->
+					</div>
+			</div>
+		</div>
+		<script src="/js/jquery.min.js?v=5b5a269bd3"></script>
+		<script src="/js/sessionStorage.js?v=957609ddb6"></script>
+		<script src="/js/picture.js?v=90c1841832"></script>
+		<script src="/js/shop_refound.js?v=1a9b788323"></script>
+		<script type="text/javascript">
+		 $("#commodityS").on("mouseenter",function(){
+		 	  $(this).find("ol").show();
+		 })
+		 $("#commodityS").on("mouseleave",function(){
+		 	  $(this).find("ol").hide();
+		 })
+		 
+		 
+		</script>
+	</body>
+</html>
